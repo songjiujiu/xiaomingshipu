@@ -2,5 +2,6 @@
 .codex/
 node_modules/
 miniprogram_npm/
+xiaomingshipu/
 .DS_Store
 Thumbs.db
