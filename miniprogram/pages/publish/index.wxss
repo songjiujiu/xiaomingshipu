@@ -1,0 +1,293 @@
+.publish-page {
+  padding-bottom: 210rpx;
+}
+
+.cover-card {
+  position: relative;
+  width: 690rpx;
+  height: 185rpx;
+  margin: 30rpx auto 22rpx;
+  overflow: hidden;
+  border: 1rpx dashed #e2c7a7;
+  border-radius: 22rpx;
+}
+
+.cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.upload-circle {
+  position: absolute;
+  top: 30rpx;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 116rpx;
+  height: 116rpx;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 10rpx 22rpx rgba(143, 109, 65, 0.12);
+}
+
+.camera {
+  color: #ffc80f;
+  font-size: 36rpx;
+  line-height: 36rpx;
+}
+
+.upload-text {
+  margin-top: 8rpx;
+  font-size: 21rpx;
+}
+
+.cover-tip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 26rpx;
+  color: #777;
+  text-align: center;
+  font-size: 20rpx;
+}
+
+.name-card,
+.select-card,
+.form-card,
+.note-card {
+  width: 690rpx;
+  margin: 0 auto 14rpx;
+  padding: 22rpx 20rpx;
+}
+
+.field-label {
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.field-label text {
+  color: #f15b2a;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.name-input {
+  flex: 1;
+  color: #222;
+  font-size: 26rpx;
+}
+
+.count,
+.note-count,
+.step-count {
+  color: #8c8c8c;
+  font-size: 24rpx;
+}
+
+.selector-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12rpx;
+  margin-top: 20rpx;
+}
+
+.selector-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 72rpx;
+  padding: 0 12rpx;
+  border: 1rpx solid #f0dcc5;
+  border-radius: 16rpx;
+}
+
+.selector-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 12rpx;
+  border-radius: 50%;
+  font-size: 24rpx;
+}
+
+.selector-taste { background: #fff0e5; }
+.selector-level { color: #49ad58; background: #eaf8ed; }
+.selector-time { color: #8c5ee8; background: #efe8ff; }
+
+.selector-title {
+  font-size: 25rpx;
+  font-weight: 700;
+}
+
+.selector-value {
+  margin-top: 4rpx;
+  color: #9a9a9a;
+  font-size: 22rpx;
+}
+
+.down {
+  position: absolute;
+  right: 14rpx;
+  color: #a7a7a7;
+  font-size: 34rpx;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12rpx;
+}
+
+.mini-button {
+  height: 50rpx;
+  padding: 0 22rpx;
+  font-size: 23rpx;
+  font-weight: 700;
+  line-height: 50rpx;
+  background: #ffc80f;
+  border-radius: 999rpx;
+}
+
+.ingredient-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.fake-input {
+  flex: 1;
+  height: 40rpx;
+  padding: 0 22rpx;
+  line-height: 40rpx;
+  background: #fff;
+  border: 1rpx solid #ead8c6;
+  border-radius: 999rpx;
+  font-size: 24rpx;
+}
+
+.amount {
+  flex: 0 0 310rpx;
+  margin-left: 12rpx;
+}
+
+.delete {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 12rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 28rpx;
+  background: #cfcfcf;
+  border-radius: 50%;
+}
+
+.expand {
+  margin-top: 12rpx;
+  color: #9a9a9a;
+  text-align: center;
+  font-size: 23rpx;
+}
+
+.step-section {
+  padding-right: 0;
+}
+
+.step-scroll {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.step-row {
+  display: flex;
+  gap: 16rpx;
+  padding-right: 20rpx;
+}
+
+.step-card {
+  position: relative;
+  flex: 0 0 198rpx;
+  width: 198rpx;
+  min-height: 208rpx;
+  overflow: hidden;
+  border: 1rpx solid #edd8bf;
+  border-radius: 14rpx;
+}
+
+.step-no {
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+  z-index: 3;
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  background: #ffd21c;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.step-image {
+  width: 198rpx;
+  height: 76rpx;
+  display: block;
+}
+
+.step-text {
+  min-height: 88rpx;
+  padding: 10rpx 12rpx;
+  font-size: 23rpx;
+  line-height: 31rpx;
+  white-space: normal;
+}
+
+.step-count {
+  padding: 0 12rpx 10rpx;
+  text-align: right;
+}
+
+.note-title {
+  font-size: 29rpx;
+  font-weight: 800;
+}
+
+.note-title text {
+  color: #888;
+  font-weight: 400;
+}
+
+.note-input {
+  width: 100%;
+  height: 72rpx;
+  margin-top: 12rpx;
+  padding: 14rpx 16rpx;
+  border: 1rpx solid #ead8c6;
+  border-radius: 14rpx;
+  font-size: 24rpx;
+}
+
+.note-count {
+  margin-top: -34rpx;
+  padding-right: 16rpx;
+  text-align: right;
+}
+
+.publish-button {
+  width: 672rpx;
+  height: 66rpx;
+  margin: 16rpx auto 0;
+  border-radius: 999rpx;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+}

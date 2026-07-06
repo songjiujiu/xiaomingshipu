@@ -1,0 +1,74 @@
+<view class="page publish-page">
+  <brand-header subtitle="分享你的拿手好菜"></brand-header>
+
+  <view class="cover-card" bindtap="toast">
+    <image class="cover-bg" src="/images/recipe/publish-cover.png" mode="aspectFill"></image>
+    <view class="upload-circle">
+      <view class="camera">●</view>
+      <view class="upload-text">上传封面图</view>
+    </view>
+    <view class="cover-tip">建议 1:1 比例，清晰美观</view>
+  </view>
+
+  <view class="name-card card">
+    <view class="field-label">菜谱名称 <text>*</text></view>
+    <view class="input-row">
+      <input class="name-input" placeholder="给你的菜谱起个诱人的名字吧~" maxlength="30" />
+      <view class="count">0/30</view>
+    </view>
+  </view>
+
+  <view class="select-card card">
+    <view class="field-label">口味 / 难度 / 时长 <text>*</text></view>
+    <view class="selector-row">
+      <view wx:for="{{selectors}}" wx:key="title" class="selector-item">
+        <view class="selector-icon selector-{{item.tone}}">{{item.icon}}</view>
+        <view>
+          <view class="selector-title">{{item.title}}</view>
+          <view class="selector-value">{{item.value}}</view>
+        </view>
+        <view class="down">⌄</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="form-card card">
+    <view class="card-head">
+      <view class="field-label">食材清单 <text>*</text></view>
+      <view class="mini-button">＋ 添加食材</view>
+    </view>
+    <view wx:for="{{ingredients}}" wx:key="name" class="ingredient-row">
+      <view class="fake-input">{{item.name}}</view>
+      <view class="fake-input amount">{{item.amount}}</view>
+      <view class="delete">×</view>
+    </view>
+    <view class="expand">展开更多⌄</view>
+  </view>
+
+  <view class="form-card step-section card">
+    <view class="card-head">
+      <view class="field-label">制作步骤 <text>*</text></view>
+      <view class="mini-button">＋ 添加步骤</view>
+    </view>
+    <scroll-view class="step-scroll" scroll-x="true" enhanced="true" show-scrollbar="false">
+      <view class="step-row">
+        <view wx:for="{{steps}}" wx:key="no" class="step-card">
+          <view class="step-no">{{item.no}}</view>
+          <image class="step-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="step-text">{{item.text}}</view>
+          <view class="step-count">0/100</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="note-card card">
+    <view class="note-title">小贴士 <text>（可选）</text></view>
+    <textarea class="note-input" placeholder="分享你的小技巧，让大家做得更好吃~" maxlength="200"></textarea>
+    <view class="note-count">0/200</view>
+  </view>
+
+  <view class="publish-button yellow-button" bindtap="toast">纸飞机　立即发布</view>
+
+  <app-tabbar active="publish"></app-tabbar>
+</view>

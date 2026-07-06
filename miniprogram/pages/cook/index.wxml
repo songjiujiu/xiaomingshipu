@@ -1,0 +1,84 @@
+<view class="page cook-page">
+  <brand-header back="{{true}}"></brand-header>
+
+  <view class="hero-wrap">
+    <image class="cook-hero" src="{{recipe.hero}}" mode="aspectFill"></image>
+    <view class="hero-back">‹</view>
+    <view class="hero-like">♥ {{recipe.likes}}</view>
+    <view class="hero-share">⇧</view>
+    <view class="hero-page">1/8</view>
+  </view>
+
+  <view class="cook-main">
+    <view class="title-row">
+      <view>
+        <view class="cook-title">{{recipe.title}}</view>
+        <view class="badge-row">
+          <text class="pill pill-orange">{{recipe.category}}</text>
+          <text class="badge">◷ {{recipe.time}}</text>
+          <text class="badge">♙ {{recipe.servings}}</text>
+        </view>
+      </view>
+      <view class="saved">★ 已收藏</view>
+    </view>
+
+    <view class="author-line">
+      <image class="author-avatar" src="/images/recipe/avatar-girl.png" mode="aspectFill"></image>
+      <view class="author-copy">
+        <view class="author-name">金小明 <text>●</text></view>
+        <view class="author-sub">美食爱好者　用心做好每一道菜 💛</view>
+      </view>
+      <view class="follow">＋ 关注</view>
+    </view>
+
+    <view class="intro">酱香浓郁，色泽诱人，鸡腿鲜嫩多汁，搭配软糯米饭，简单快手又美味，一人食也要好好吃饭呀~</view>
+
+    <view class="nutrition-card card">
+      <view wx:for="{{nutrition}}" wx:key="label" class="nutrition-item">
+        <view class="nutrition-label">{{item.label}}</view>
+        <view class="nutrition-value">{{item.value}} <text>{{item.unit}}</text></view>
+      </view>
+    </view>
+
+    <view class="cook-section-title">食材清单 <text>1 人份⌄</text></view>
+    <view class="ingredient-panels">
+      <view class="ingredient-panel card">
+        <view class="panel-title">主料</view>
+        <view wx:for="{{mainList}}" wx:key="name" class="cook-ingredient">
+          <text>• {{item.name}}</text><text>{{item.amount}}</text>
+        </view>
+      </view>
+      <view class="ingredient-panel card">
+        <view class="panel-title">调料</view>
+        <view wx:for="{{spiceList}}" wx:key="name" class="cook-ingredient">
+          <text>• {{item.name}}</text><text>{{item.amount}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="cook-section-title">制作步骤</view>
+    <scroll-view class="cook-step-scroll" scroll-x="true" enhanced="true" show-scrollbar="false">
+      <view class="cook-step-row">
+        <view wx:for="{{steps}}" wx:key="no" class="cook-step-card card">
+          <view class="cook-step-no">{{item.no}}</view>
+          <image class="cook-step-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="cook-step-text">{{item.text}}</view>
+        </view>
+      </view>
+    </scroll-view>
+
+    <view class="tip-card card">
+      <image class="tip-avatar" src="/images/recipe/avatar-girl.png" mode="aspectFill"></image>
+      <view>
+        <view class="tip-title">小贴士</view>
+        <view class="tip-text">喜欢更浓郁口感可以多焖煮 1-2 分钟；搭配蔬菜一起焯水，营养更均衡～</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cook-bottom">
+    <view class="bottom-item star">★ <text>已收藏</text></view>
+    <view class="bottom-item">⌯ <text>分享</text></view>
+    <view class="start-button yellow-button">▰　开始做饭</view>
+  </view>
+</view>

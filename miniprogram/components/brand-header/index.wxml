@@ -1,0 +1,9 @@
+<view class="brand-header {{backClass}}">
+  <view class="brand-row">
+    <view wx:if="{{back}}" class="back-button" bindtap="goBack"></view>
+    <image class="brand-logo" src="/images/recipe/brand-logo.png" mode="widthFix"></image>
+  </view>
+  <view wx:if="{{subtitle}}" class="brand-subtitle">
+    {{subtitle}} <text class="brand-heart">♥</text>
+  </view>
+</view>

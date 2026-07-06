@@ -1,0 +1,43 @@
+<view class="page profile-page">
+  <brand-header></brand-header>
+
+  <view class="profile-card card">
+    <view class="profile-top">
+      <image class="avatar" src="/images/recipe/avatar-girl.png" mode="aspectFill"></image>
+      <view class="profile-info">
+        <view class="name-row">
+          <text class="profile-name">金小明</text>
+          <text class="level">Lv.8</text>
+        </view>
+        <view class="bio">用心做好每一道菜，治愈生活的小确幸 ✨</view>
+      </view>
+      <view class="edit-button">编辑资料</view>
+    </view>
+    <view class="stats-row">
+      <view wx:for="{{stats}}" wx:key="label" class="stat-item">
+        <view class="stat-value">{{item.value}}</view>
+        <view class="stat-label">{{item.label}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="menu-card card">
+    <view wx:for="{{menus}}" wx:key="title" class="menu-item">
+      <view class="menu-icon menu-{{item.tone}}">{{item.icon}}</view>
+      <view class="menu-title">{{item.title}}</view>
+      <view class="menu-sub">{{item.sub}}</view>
+    </view>
+  </view>
+
+  <image class="vip-banner" src="/images/recipe/profile-vip-banner.png" mode="aspectFill"></image>
+
+  <view class="invite-card card">
+    <view class="gift">▣</view>
+    <view class="invite-title">邀请好友</view>
+    <view class="invite-line"></view>
+    <view class="invite-sub">邀请好友得会员，双方各得 7 天会员</view>
+    <view class="invite-arrow">›</view>
+  </view>
+
+  <app-tabbar active="profile"></app-tabbar>
+</view>

@@ -1,0 +1,74 @@
+<view class="page favorite-page">
+  <brand-header subtitle="收藏你喜欢的每一道菜"></brand-header>
+
+  <view class="search-bar">
+    <view class="search-icon"></view>
+    <view class="search-placeholder">搜索菜谱、食材、作者</view>
+    <view class="search-button">搜索</view>
+  </view>
+
+  <view class="tab-card card">
+    <view wx:for="{{tabs}}" wx:key="label" class="tab-item {{item.activeClass}}" data-index="{{index}}" bindtap="switchTab">
+      {{item.label}}
+    </view>
+  </view>
+
+  <view class="folder-row">
+    <view class="folder-card card">
+      <view class="folder-icon folder-yellow">♥</view>
+      <view>
+        <view class="folder-title">最近收藏</view>
+        <view class="folder-sub">看看你最近收藏了什么</view>
+      </view>
+      <view class="folder-arrow">›</view>
+    </view>
+    <view class="folder-card card">
+      <view class="folder-icon folder-coral">★</view>
+      <view>
+        <view class="folder-title">我的收藏夹</view>
+        <view class="folder-sub">创建和管理收藏夹</view>
+      </view>
+      <view class="folder-arrow">›</view>
+    </view>
+  </view>
+
+  <view class="favorite-list">
+    <view wx:for="{{recipes}}" wx:key="id" class="favorite-item card" data-id="{{item.id}}" bindtap="goDetail">
+      <image class="favorite-image" src="{{item.image}}" mode="aspectFill"></image>
+      <view class="favorite-info">
+        <view class="favorite-top">
+          <view class="favorite-title">{{item.title}}</view>
+          <view class="saved-time">{{item.savedTime}}</view>
+        </view>
+        <view class="favorite-desc">{{item.desc}}</view>
+        <view class="author-row">
+          <image class="mini-avatar" src="/images/recipe/avatar-girl.png" mode="aspectFill"></image>
+          <text>金小明</text>
+          <text class="verify">●</text>
+        </view>
+        <view class="favorite-meta">
+          <text class="heart">♥</text><text>{{item.likes}}</text>
+          <text class="clock">◷</text><text>{{item.time}}</text>
+        </view>
+      </view>
+      <view class="star">★</view>
+    </view>
+  </view>
+
+  <view class="section-title weekly-title">
+    <view class="section-title-main">本周常做</view>
+    <view class="section-more">查看全部 〉</view>
+  </view>
+
+  <scroll-view class="weekly-scroll" scroll-x="true" enhanced="true" show-scrollbar="false">
+    <view class="weekly-row">
+      <view wx:for="{{weekly}}" wx:key="id" class="weekly-card">
+        <view class="rank">{{index + 1}}</view>
+        <image class="weekly-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="weekly-name">{{item.title}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <app-tabbar active="favorite"></app-tabbar>
+</view>

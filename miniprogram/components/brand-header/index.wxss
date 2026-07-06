@@ -1,0 +1,49 @@
+.brand-header {
+  padding: 84rpx 30rpx 0;
+}
+
+.brand-header-back {
+  padding-top: 72rpx;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  height: 64rpx;
+}
+
+.brand-logo {
+  width: 282rpx;
+  height: 64rpx;
+}
+
+.back-button {
+  position: relative;
+  width: 50rpx;
+  height: 56rpx;
+  margin-right: 18rpx;
+}
+
+.back-button::before {
+  position: absolute;
+  top: 13rpx;
+  left: 10rpx;
+  width: 22rpx;
+  height: 22rpx;
+  content: "";
+  border-left: 4rpx solid #111;
+  border-bottom: 4rpx solid #111;
+  transform: rotate(45deg);
+}
+
+.brand-subtitle {
+  margin-top: 10rpx;
+  color: #6d6d72;
+  font-size: 27rpx;
+  letter-spacing: 1rpx;
+}
+
+.brand-heart {
+  color: #ffc60c;
+  font-size: 28rpx;
+}

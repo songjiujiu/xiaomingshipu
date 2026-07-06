@@ -1,0 +1,202 @@
+.profile-card {
+  width: 690rpx;
+  margin: 64rpx auto 26rpx;
+  padding: 34rpx 34rpx 30rpx;
+  border-radius: 28rpx;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 132rpx;
+  height: 132rpx;
+  border-radius: 50%;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 0;
+  margin-left: 28rpx;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 38rpx;
+  font-weight: 900;
+}
+
+.level {
+  height: 36rpx;
+  margin-left: 18rpx;
+  padding: 0 14rpx;
+  color: #9d5a18;
+  font-size: 22rpx;
+  line-height: 36rpx;
+  background: #ffe5aa;
+  border-radius: 8rpx;
+}
+
+.bio {
+  margin-top: 22rpx;
+  overflow: hidden;
+  color: #858585;
+  font-size: 25rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edit-button {
+  width: 120rpx;
+  height: 58rpx;
+  text-align: center;
+  line-height: 58rpx;
+  background: linear-gradient(180deg, #ffd526, #ffc608);
+  border-radius: 999rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 44rpx;
+}
+
+.stat-item {
+  position: relative;
+  text-align: center;
+}
+
+.stat-item:not(:last-child)::after {
+  position: absolute;
+  top: 8rpx;
+  right: 0;
+  width: 1rpx;
+  height: 54rpx;
+  content: "";
+  background: #eee2d2;
+}
+
+.stat-value {
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.stat-label {
+  margin-top: 10rpx;
+  color: #8a8a8a;
+  font-size: 24rpx;
+}
+
+.menu-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 690rpx;
+  margin: 0 auto 26rpx;
+  padding: 30rpx 0;
+}
+
+.menu-item {
+  position: relative;
+  height: 148rpx;
+  text-align: center;
+}
+
+.menu-item:nth-child(-n + 3) {
+  border-bottom: 1rpx solid #eee4d5;
+}
+
+.menu-item:not(:nth-child(3n))::after {
+  position: absolute;
+  top: 20rpx;
+  right: 0;
+  width: 1rpx;
+  height: 80rpx;
+  content: "";
+  background: #eee4d5;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66rpx;
+  height: 66rpx;
+  margin: 0 auto 14rpx;
+  border-radius: 50%;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.menu-yellow { color: #f7a900; background: #fff1c9; }
+.menu-red { color: #ff5f5f; background: #ffeded; }
+.menu-green { color: #40bb62; background: #e9f8ee; }
+.menu-purple { color: #8e68ee; background: #f1eafe; }
+.menu-gold { color: #efb20b; background: #fff2c9; }
+.menu-blue { color: #4e84e8; background: #edf3ff; }
+
+.menu-title {
+  font-size: 26rpx;
+  font-weight: 700;
+}
+
+.menu-sub {
+  margin-top: 8rpx;
+  color: #8c8c8c;
+  font-size: 22rpx;
+}
+
+.vip-banner {
+  display: block;
+  width: 690rpx;
+  height: 202rpx;
+  margin: 0 auto 16rpx;
+  border-radius: 24rpx;
+}
+
+.invite-card {
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  height: 62rpx;
+  margin: 0 auto;
+  padding: 0 24rpx;
+  border-radius: 18rpx;
+}
+
+.gift {
+  color: #ff7f18;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+
+.invite-title {
+  margin-left: 18rpx;
+  font-size: 25rpx;
+  font-weight: 700;
+}
+
+.invite-line {
+  width: 1rpx;
+  height: 28rpx;
+  margin: 0 18rpx;
+  background: #eadfce;
+}
+
+.invite-sub {
+  flex: 1;
+  color: #8a8a8a;
+  font-size: 23rpx;
+}
+
+.invite-arrow {
+  color: #777;
+  font-size: 42rpx;
+}

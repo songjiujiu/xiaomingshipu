@@ -1,0 +1,51 @@
+<view class="page home-page">
+  <brand-header subtitle="用心做好每一餐"></brand-header>
+
+  <view class="search-bar" bindtap="goCategory">
+    <view class="search-icon"></view>
+    <view class="search-placeholder">搜索食谱、食材、菜系</view>
+    <view class="search-button">搜索</view>
+  </view>
+
+  <image class="home-hero" src="/images/recipe/home-hero.png" mode="aspectFill" bindtap="goDetail" data-id="chicken-rice"></image>
+
+  <view class="category-card card">
+    <view wx:for="{{categories}}" wx:key="name" class="category-item" bindtap="goCategory">
+      <image class="category-icon" src="{{item.icon}}" mode="aspectFill"></image>
+      <view class="category-name">{{item.name}}</view>
+    </view>
+  </view>
+
+  <view class="shortcut-card card">
+    <view wx:for="{{shortcuts}}" wx:key="key" class="shortcut-item" data-key="{{item.key}}" bindtap="goShortcut">
+      <view class="shortcut-icon shortcut-{{item.tone}}">{{item.icon}}</view>
+      <view>
+        <view class="shortcut-title">{{item.title}}</view>
+        <view class="shortcut-sub">{{item.sub}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section-title home-section">
+    <view class="section-title-main">热门推荐</view>
+    <view class="section-more">查看更多 〉</view>
+  </view>
+
+  <scroll-view class="hot-scroll" scroll-x="true" enhanced="true" show-scrollbar="false">
+    <view class="hot-row">
+      <view wx:for="{{hotRecipes}}" wx:key="id" class="hot-card" data-id="{{item.id}}" bindtap="goDetail">
+        <image class="hot-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="hot-badge {{item.badgeClass}}">{{item.category}}</view>
+        <view class="hot-title">{{item.title}}</view>
+        <view class="hot-meta">
+          <text class="heart">♥</text><text>{{item.likes}}</text>
+          <text class="time">{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <image class="record-banner" src="/images/recipe/home-record-banner.png" mode="aspectFill" bindtap="goPublish"></image>
+
+  <app-tabbar active="home"></app-tabbar>
+</view>
