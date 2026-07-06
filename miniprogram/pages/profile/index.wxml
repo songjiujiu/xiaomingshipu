@@ -29,7 +29,7 @@
     </view>
   </view>
 
-  <image class="vip-banner" src="/images/recipe/profile-vip-banner.png" mode="aspectFill"></image>
+  <image class="vip-banner" src="/images/recipe/profile-vip-banner.jpg" mode="aspectFill"></image>
 
   <view class="invite-card card">
     <view class="gift">▣</view>

@@ -9,7 +9,7 @@
     </view>
   </scroll-view>
 
-  <image class="wheel" src="/images/recipe/random-wheel.png" mode="aspectFit" bindtap="toast"></image>
+  <image class="wheel" src="/images/recipe/random-wheel.jpg" mode="aspectFit" bindtap="toast"></image>
 
   <view class="draw-card card">
     <view class="draw-title">★ 今日抽中 ✨</view>

@@ -7,7 +7,7 @@
     <view class="search-button">搜索</view>
   </view>
 
-  <image class="home-hero" src="/images/recipe/home-hero.png" mode="aspectFill" bindtap="goDetail" data-id="chicken-rice"></image>
+  <image class="home-hero" src="/images/recipe/home-hero.jpg" mode="aspectFill" bindtap="goDetail" data-id="chicken-rice"></image>
 
   <view class="category-card card">
     <view wx:for="{{categories}}" wx:key="name" class="category-item" bindtap="goCategory">
@@ -45,7 +45,7 @@
     </view>
   </scroll-view>
 
-  <image class="record-banner" src="/images/recipe/home-record-banner.png" mode="aspectFill" bindtap="goPublish"></image>
+  <image class="record-banner" src="/images/recipe/home-record-banner.jpg" mode="aspectFill" bindtap="goPublish"></image>
 
   <app-tabbar active="home"></app-tabbar>
 </view>

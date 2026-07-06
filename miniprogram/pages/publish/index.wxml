@@ -2,7 +2,7 @@
   <brand-header subtitle="分享你的拿手好菜"></brand-header>
 
   <view class="cover-card" bindtap="toast">
-    <image class="cover-bg" src="/images/recipe/publish-cover.png" mode="aspectFill"></image>
+    <image class="cover-bg" src="/images/recipe/publish-cover.jpg" mode="aspectFill"></image>
     <view class="upload-circle">
       <view class="camera">●</view>
       <view class="upload-text">上传封面图</view>
