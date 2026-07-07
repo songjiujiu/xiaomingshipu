@@ -1,17 +1,6 @@
 <view class="mine-page">
   <view class="status-bar">
-    <text>9:41</text>
-    <view class="status-icons">
-      <view class="signal">
-        <view></view>
-        <view></view>
-        <view></view>
-      </view>
-      <view class="status-circle"></view>
-      <view class="battery">
-        <view></view>
-      </view>
-    </view>
+
   </view>
 
   <view class="mine-header">

@@ -1,17 +1,5 @@
 <view class="category-page">
   <view class="status-bar">
-    <text class="status-time">9:41</text>
-    <view class="status-icons">
-      <view class="signal">
-        <view></view>
-        <view></view>
-        <view></view>
-      </view>
-      <view class="status-tag"></view>
-      <view class="battery">
-        <view></view>
-      </view>
-    </view>
   </view>
 
   <view class="header">
@@ -22,13 +10,6 @@
         <text>食谱</text>
       </view>
       <text class="brand-subtitle">找到你想做的每一道菜 💛</text>
-    </view>
-    <view class="menu-capsule">
-      <text class="menu-dots">•••</text>
-      <view class="menu-divider"></view>
-      <view class="menu-ring">
-        <view></view>
-      </view>
     </view>
   </view>
 
