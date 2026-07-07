@@ -1,0 +1,81 @@
+<view class="mine-page">
+  <view class="status-bar">
+    <text>9:41</text>
+    <view class="status-icons">
+      <view class="signal">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+      <view class="status-circle"></view>
+      <view class="battery">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="mine-header">
+    <view>
+      <view class="brand-title">
+        <text>金小明</text>
+        <text class="brand-highlight">的</text>
+        <text>食谱</text>
+      </view>
+      <text class="brand-subtitle">分享你的拿手好菜 💛</text>
+    </view>
+    <view class="menu-capsule">
+      <text class="menu-dots">•••</text>
+      <view class="menu-divider"></view>
+      <view class="menu-ring">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="cover-card">
+      <image class="cover-image" src="{{coverImage}}" mode="aspectFill" />
+      <view class="cover-mask">
+        <view class="upload-bubble">
+          <text class="camera">▣</text>
+          <text class="upload-text">上传封面图</text>
+        </view>
+        <text class="cover-tip">建议 1:1 比例，清晰美观</text>
+      </view>
+    </view>
+
+    <view class="draft-card">
+      <view class="field-row">
+        <text class="field-label">菜谱名称</text>
+        <text class="required">*</text>
+      </view>
+      <view class="input-line">
+        <text class="input-placeholder">给食谱起个让人想点开的名字吧</text>
+        <text class="counter">0/30</text>
+      </view>
+    </view>
+
+    <view class="profile-strip">
+      <view class="profile-avatar">👨‍🍳</view>
+      <view class="profile-copy">
+        <text class="profile-name">金小明</text>
+        <text class="profile-desc">今天也认真记录一餐</text>
+      </view>
+      <button class="profile-button">编辑资料</button>
+    </view>
+  </view>
+
+  <view class="bottom-nav">
+    <view
+      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
+      wx:for="{{navs}}"
+      wx:key="name"
+      data-url="{{item.url}}"
+      bindtap="onNavTap"
+    >
+      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
+      <text wx:else class="nav-icon">{{item.icon}}</text>
+      <text class="nav-label">{{item.name}}</text>
+    </view>
+  </view>
+</view>

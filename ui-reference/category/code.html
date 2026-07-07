@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>金小明的食谱 - 分类</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#ffd100',
+              surface: '#fff8f0',
+              text: {
+                primary: '#333333',
+                secondary: '#666666',
+                tertiary: '#999999'
+              }
+            }
+          },
+          borderRadius: {
+            'card': '24px',
+            'element': '12px'
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-fonts">
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Be Vietnam Pro', "Microsoft YaHei", sans-serif;
+      background-color: #fff8f0;
+      color: #333333;
+    }
+    .custom-shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="max-w-[750px] mx-auto min-h-screen relative pb-24">
+<!-- BEGIN: Status Bar -->
+<header class="flex justify-between items-center px-6 pt-4 pb-2" data-purpose="status-bar">
+<span class="font-bold text-sm">9:41</span>
+<div class="flex items-center gap-1">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" fill-rule="evenodd"></path></svg>
+<div class="w-6 h-3 border border-black rounded-sm relative">
+<div class="absolute inset-0.5 bg-black w-4"></div>
+</div>
+</div>
+</header>
+<!-- END: Status Bar -->
+<!-- BEGIN: Main Header -->
+<section class="px-6 py-4 flex justify-between items-start" data-purpose="header-content">
+<div>
+<h1 class="text-3xl font-bold flex items-center gap-1">
+        金小明<span class="text-brand-yellow">的</span>食谱
+      </h1>
+<p class="text-brand-text-secondary text-sm mt-1">找到你想做的每一道菜 💛</p>
+</div>
+<div class="bg-white/80 backdrop-blur border border-gray-200 rounded-full flex items-center px-3 py-1 gap-4">
+<button class="text-black font-bold text-lg">•••</button>
+<div class="w-[1px] h-4 bg-gray-300"></div>
+<button class="rounded-full border-2 border-black w-5 h-5 flex items-center justify-center p-0.5">
+<div class="w-full h-full bg-black rounded-full"></div>
+</button>
+</div>
+</section>
+<!-- END: Main Header -->
+<!-- BEGIN: Search Bar -->
+<section class="px-6 py-2" data-purpose="search-container">
+<div class="relative flex items-center">
+<div class="absolute left-4 text-gray-400">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<input class="w-full h-12 pl-12 pr-24 rounded-full border-none bg-white custom-shadow focus:ring-2 focus:ring-brand-yellow placeholder:text-gray-300" placeholder="搜索菜系、口味、食材" type="text"/>
+<button class="absolute right-1 top-1 bottom-1 px-8 bg-brand-yellow rounded-full font-bold text-black">搜索</button>
+</div>
+</section>
+<!-- END: Search Bar -->
+<!-- BEGIN: Categories Grid -->
+<section class="px-6 mt-6" data-purpose="category-icons">
+<div class="flex items-center gap-2 mb-6">
+<h2 class="text-xl font-bold">分类</h2>
+<span class="text-xs bg-orange-100 text-orange-400 px-2 py-0.5 rounded-full">共 24 类</span>
+</div>
+<div class="grid grid-cols-6 gap-y-6 text-center">
+<!-- Row 1 -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center text-2xl">🍲</div>
+<span class="text-xs">家常菜</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-2xl">🥘</div>
+<span class="text-xs">快手菜</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-2xl">🥗</div>
+<span class="text-xs">减脂餐</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-yellow-50 rounded-full flex items-center justify-center text-2xl">🍞</div>
+<span class="text-xs">早餐</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-purple-50 rounded-full flex items-center justify-center text-2xl">🥣</div>
+<span class="text-xs">汤羹</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center text-2xl">🍰</div>
+<span class="text-xs">烘焙甜点</span>
+</div>
+<!-- Row 2 -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-2xl">🥤</div>
+<span class="text-xs">饮品</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-yellow-50 rounded-full flex items-center justify-center text-2xl">🍢</div>
+<span class="text-xs">小吃</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-2xl">👶</div>
+<span class="text-xs">宝宝辅食</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-2xl">🍚</div>
+<span class="text-xs">下饭菜</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center text-2xl">🏮</div>
+<span class="text-xs">节日菜谱</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-2xl text-blue-500">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z"></path></svg>
+</div>
+<span class="text-xs">全部食材</span>
+</div>
+</div>
+</section>
+<!-- END: Categories Grid -->
+<!-- BEGIN: Hot Categories -->
+<section class="px-6 mt-8" data-purpose="hot-categories">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-xl">🔥</span>
+<h2 class="text-xl font-bold">热门分类</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Card 1 -->
+<div class="bg-white rounded-card p-4 custom-shadow flex items-center justify-between relative overflow-hidden h-28">
+<div class="z-10">
+<h3 class="font-bold flex items-center gap-1 text-sm"><span class="text-orange-500">🍲</span> 家常菜</h3>
+<p class="text-[10px] text-gray-400 mt-1">每天都能做</p>
+</div>
+<img alt="家常菜" class="absolute -right-2 top-0 h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ63hJ5T0BjoNdoVUKg7inPLH3SO_YElcdKPccaUSN6Bc4hzUCdZwUlTzbPOAtujiQjfkb1EoMwWh4tc0wuIG_ramvP2L6Yb9MNpoGeVGiSkRpo24FNXo1UWhUXFVgrCyF_m9aoCqPAr6_cYw7RxW8YoSk-Amyqp5FEOU1k1_gRDQo2bG_Ehtm8KcMqUtE-zbu4OYGo3LTfPX96rGMOQapztORB7_BKAWoAfeHut7ksrufPeP2Dw2vFcsZdeloVycO0gpyymXQjAL0"/>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-card p-4 custom-shadow flex items-center justify-between relative overflow-hidden h-28">
+<div class="z-10">
+<h3 class="font-bold flex items-center gap-1 text-sm"><span class="text-green-500">🥗</span> 减脂餐</h3>
+<p class="text-[10px] text-gray-400 mt-1">轻负担更美味</p>
+</div>
+<img alt="减脂餐" class="absolute -right-2 top-0 h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFHge5OqWsQYmJg-1lonGk2mfGu5lmXPJWUNWVdIN_7bzgMTSPb4-MnWx6XafvzhkI0LLKAuzwh6ZB-UVYY_O9t0b8x5zmmFVzxttwVUklYZGjj5Cs6994ulfAcby2jkt5I26VTEquygGX6gtP4rul8ruLcQxFd_nBA4r9xZc6Jb4hMLwGjmq-wclH2qa2q3hH5lxtK9vbRwavAKHwMiBJUOESN0gaDEuDQCmf69ybi-VM2G7q2Lt2W4kbcC947o41FqA3LmZCEmKg"/>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-card p-4 custom-shadow flex items-center justify-between relative overflow-hidden h-28">
+<div class="z-10">
+<h3 class="font-bold flex items-center gap-1 text-sm"><span class="text-green-600">🥘</span> 快手菜</h3>
+<p class="text-[10px] text-gray-400 mt-1">10分钟搞定</p>
+</div>
+<img alt="快手菜" class="absolute -right-2 top-0 h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Nx7lMs1VUM12dUCLTZUtRSjfRP2RrdZZlWhCwYJlwNjT4JcTROTxyykqNWyqz0-VGN4z7wX6fUO6FLvVvQRognJ9dKO-zBKangKMAezBzMvlL95pu5V0k2ELA69JW8W7mKVTKVNm8INHVjeXMyqSqlig6lpLgjLxQql4K0hmOgIKhaT1N6qdZathEjeAeRlqpRuYOdIijdDr6n1qZuCijiWceGA9iWbLfzYa-WKAS08weAIXIJT6C1BzsTn8k_L8o1p5QsYPsv_B"/>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-card p-4 custom-shadow flex items-center justify-between relative overflow-hidden h-28">
+<div class="z-10">
+<h3 class="font-bold flex items-center gap-1 text-sm"><span class="text-orange-400">🍰</span> 烘焙甜点</h3>
+<p class="text-[10px] text-gray-400 mt-1">甜蜜治愈时光</p>
+</div>
+<img alt="烘焙甜点" class="absolute -right-2 top-0 h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tfMpW5Luma1xbMMm4OaOZP9zCKYxiHmx-DqyipDwWKsPLs_vXXxqESHmk2xAfqI65jD8nrYPfCYez8QmGFyqNumvmE0i5minCndtpqRkqPnpKsZ_A3Z9IlPSqaxoB8AeEoU05VDz68pSvZ0n3PwlT6BOfdSkpxEyVx4cWsmeoZoyzfyNle5LlFv2Mir892puokZSmOr0ObJ9_DxeqwuyvGJinoKT2Kf21PA2SSPrhHSpLtHwa7jl5odjWKmGB5G0RVVH8ODzbA2R"/>
+</div>
+</div>
+</section>
+<!-- END: Hot Categories -->
+<!-- BEGIN: Find by Ingredient -->
+<section class="px-6 mt-8" data-purpose="ingredients-section">
+<h2 class="text-xl font-bold mb-4">按食材查找</h2>
+<div class="grid grid-cols-5 gap-3">
+<!-- Ingredient 1 -->
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="鸡肉" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0_oURi43Sbi4lgvxBikk5-yV2KVo9aDV6rzb1aBI9CHNmDkJ4ps-VJ1A5iCWIjIVHUSIgvltqHyWIR7seU2H4z3uFakH9YHnVT4smzkdaTJ_oGPlTDJj4hK-IijUq_hvKSC66Sft5aHtrDZgIQ-pJdFgYZ4cM72jQ5qjfIneJF67D7EtQh1AFeL0L-V3S4zrLEiYcuKqI65VlIWlZ9zRUM5_gTicQJH0yo8Ad49YUczOyxSL2Yi2Nqf5cn4EU3jFHhujbheV6QWpt"/>
+<span class="text-[10px] font-medium">鸡肉</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="牛肉" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbhli6sgL-iKE520T11G8Ccknqq6amIv07c71Trr4DfVvRHFjRYqaGf_fzjCMGRZCxL8gvJnwpT7fJzChHTExtRgVY7QihTG128thpP4gsN0j9LpYxJoWaE_1zIT3T3fJhG1l3jx68n7HLe-ygQ2fy6av9a1BjWPpJaU2t3XT4N9aA0p7Nwo-Wat2TouBJ8BajZvq8jgVHD9lKLA_YO57U_89PYQABwHYWDJ46vqnymQtqlulWRmjbctd-_pt9uWFvrKc1zrFPvAFJ"/>
+<span class="text-[10px] font-medium">牛肉</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="虾仁" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjHRLtp1GvFd3kdN9dfsaAxWq2bUg8FxSvvtf02ChiEannn4pAWW1e4ncaBr2V5rnuuFG71hdnK05j8gmgRQSZgu6oSeU_5IUCZNDpHkzUMnUp1Q4TjCzA-EyPplVA80eR2JgmoaPpIWe_4a-IMZ8Mm5rbYnR1YV_00vkZFftMfNeD4vQ4Y0UXdDjlSlsyxLT3D6vaHxoo6t1sGpxDdxEYpN5rLxA3SAC6QgfHZLWusQ9EIjEedBqLSAnzJD5Xmk_50vDUq_epG41x"/>
+<span class="text-[10px] font-medium">虾仁</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="鸡蛋" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj6QJs7xlIV6cRJ67RVm13EUlrXlXlqqKo-wAmHiRkAFvFUgRtj4rVpxpO-N6jRPUAOGdwUuCpaA76EOJt3a6l12_jLvfdQJixFCopTPrtbUbX6iFFioB4GGZa6Gq3l2ol7ooAE34iV9B0fgYOELUon-anLXnmAL3N61wmhkZCikUM2jUHB898V4t-hwaIZa82mlQXRtQ_BqxrufG0gpoS-6oU4tAkwjFeTAEhz_GGK9kSWczyslgZoBGBHbjd3kjJdJB_DtPg0WCL"/>
+<span class="text-[10px] font-medium">鸡蛋</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="番茄" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK1wbCae_kPt7WBT-5u0s4iENwA2tAAEKHaOyf6ZUZebK6DS_cyUUnAmLdWMLJGMz_pWfhfSZ21M-gQOcG3cTMXajzYkndPez0zbfEPp71LC4LjGmWxN7TCVCe1xnu2gdKkHJfpAfCPRNd_1htqEJSdkQqIcOz4P53Glh76AeC8aWrsjCaZJJCy7i4VyuwdV_n8DP7x489Lb96GLrKdl8DnZU6UwurYv6vlpe3whZ5gweP_tvNr0-oVDfmMtHbify6WhVfVPZYAfhf"/>
+<span class="text-[10px] font-medium">番茄</span>
+</div>
+<!-- Row 2 -->
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="西兰花" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAocZfHOhd1zA5vHACHpFK7W05Fx6uB7x3o-BgibiSoBfwGSfFxCY0Rl_5WgWLma_6yAOslxWjM8Se0WemFYaPEWox74T-AggqLDfmUIskvQsSxA5hXU12-f5E-F6BbF47TBvMVKxfx_CDok8NWJtju2RuyMLAfJKmQXEPIJvLjfJ5kQt6G2VRvfpD2z8dVbH9B_03hcKGn7sD2gcceEN5zZv-LScWnyBA6EIjfdiH-oQ1Ctqk-RZDnCuA0Db19h7-aPyWuj77t51Z-"/>
+<span class="text-[10px] font-medium">西兰花</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="土豆" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC_rD5b35cpEFYC96Bh-cceqrDiRxtkCrPh1qMcaMLYLxFlK_7l67202T6wM1KCBDgeFVEaD1uaH9l3XTsUHUMPMYBY_RzQhsFoZ4kTtaDPT26yU4Z1J9f7AjPzGCU02D5DQKEHMzgt4sOJLTnZHfOVd5aj0rlq6MqaNjaHcaDUArssXZRc5Od6gIizbv7Zj4WTXPYNBDHPTepcUxr8xfydjZwGBAysQYwmjOTecAhIsIINZFJax9X4bITjotATJpJBW75I4Y7SESM"/>
+<span class="text-[10px] font-medium">土豆</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="豆腐" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUWysqcaXewtQ6UTK8FS0Wx1k1fpfa9kGS7sB9rPJ26BUPECV9ZG-9aLdJ1Pnz7orV5IKhO9DVQuwDU7S35zrGPHP41VGRMSV3ch3V_ilN-yfj-m2gcjpQWjjaBXiv1KMK0i28U7L25xLguhaT54hXbh9FfVZt_DVG6eDIt_8k7COcjfFfNaW044q3p_qh7o1P-94WKEqos9Xs8ULhVNCT1r5-AVKtOAoVEfK6x1cDoyiuMlnvbg7JPWsCRj18YrQePmtf98OMKeEZ"/>
+<span class="text-[10px] font-medium">豆腐</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="面条" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWr6uWdc3g01ufmkSIqt8CGAam848L1IqfdD46wbUDvU6x6oFzkywabIgDknm3h1Si7OHPSss-DNCyvvctkva5q4zOaq-pWVKCOzsLW34a4Cr52kj5wCj7uUQ8rZ5KKZBEUQBg7lAsjqaA93EVVcTypBxyGC5LjV2DUp5vkhC7zFEkkd1cjenpEVqNUfnjoldqubE92cux_tipKaCQHgp0lWJlwmfhpkxgAc4RKVbHNbb9v1j8EiWk2WIvu1ENvetOaHoWiI3t1_Dn"/>
+<span class="text-[10px] font-medium">面条</span>
+</div>
+<div class="bg-white rounded-xl p-2 custom-shadow text-center">
+<img alt="米饭" class="w-full aspect-square object-contain mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtVFmmsBnZdjmoQjupccELiZC_z_Eq7h5XI6hegNOLYAt2EvAuiO0aJqJ2I_ZTy0clmqa7PWIRMQQt-OBhQQWYsf-_Vmg6RoeaYrLh4uUnCUnX2dhGyEog4iRYHWd2Fk8CwKfmaYL17n7usPcl2Cc4iSEA-2v3oUGRMwQwgwKUM7nWl4EDYvJweDYgqqIzHSITxwpPvsb2A_hL7IcG8s9VByV89wgRU0P7ZMAXq7aeeNxraKwdS-sJL16OZ0K8w9Lbz1uDQ8Rw-71O"/>
+<span class="text-[10px] font-medium">米饭</span>
+</div>
+</div>
+</section>
+<!-- END: Find by Ingredient -->
+<!-- BEGIN: Cuisine Selection -->
+<section class="mt-8 pb-10" data-purpose="cuisine-selection">
+<div class="px-6 flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold">菜系精选</h2>
+<button class="text-xs text-gray-400 flex items-center">查看全部 <span class="ml-1">&gt;</span></button>
+</div>
+<div class="flex gap-4 overflow-x-auto px-6 hide-scrollbar">
+<!-- Cuisine Card 1 -->
+<div class="min-w-[110px] bg-white rounded-2xl overflow-hidden custom-shadow pb-2">
+<img alt="川菜" class="w-full h-24 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD83P2R-iKW-2GlG8vpS4U2QsoPNFnfbIDW_FbgqZf0k3RGJO6APyp_nHXKQZKL8tVEi8DcVybM6zdWMgAtmaeiEIcxABAFUz_HqShTlLFEMmBCvZFUNLz38IQv7lFZfj3CpSwqiNmAvJ_810URr3O_4qpN8lbabP7W73_MeVXQ5sNeyIlE_V8KfjqI4-XgcFWDmELcmGcvNyl4KV1ECtNDYxcGRHHrMusFVXRaAeGxmxz1Tt73Jfmri1PaIOHiK4SlhMMz8Rhzeih0"/>
+<div class="px-2 mt-1">
+<div class="text-sm font-bold">川菜</div>
+<div class="text-[9px] text-gray-400 flex items-center gap-0.5">麻辣鲜香 🌶️</div>
+</div>
+</div>
+<!-- Cuisine Card 2 -->
+<div class="min-w-[110px] bg-white rounded-2xl overflow-hidden custom-shadow pb-2">
+<img alt="粤菜" class="w-full h-24 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjQIq1DA6wqscN0kXGBurr_l9hrXDmKz0xDobFfZilcyvm618euW9KYHqjkaqrdQZ_DyiPjBcWQMqBCQhRqNgvrvNGBPobcM3PrI_jkfqRmTREXnCjgsFYUt1C5hVECoQtprQCqsK_VUoVfmj2-xhc_m1HWpZ0QBcB9Fd5GwJFDLHMYlQb2wz4TGoS4LdtIhjBkU4AjsY6AsU8x8fQN4VW_nudABgqXogo4NdzE97kEl4ZZuULgozJ0ghBmJI2yUczzNGb5OksNZU_"/>
+<div class="px-2 mt-1">
+<div class="text-sm font-bold">粤菜</div>
+<div class="text-[9px] text-gray-400 flex items-center gap-0.5">鲜香清淡 🤝</div>
+</div>
+</div>
+<!-- Cuisine Card 3 -->
+<div class="min-w-[110px] bg-white rounded-2xl overflow-hidden custom-shadow pb-2">
+<img alt="湘菜" class="w-full h-24 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_las6Qm5bDKNQ3mqhF9mnIPb2JHm0bOCPXCy_QR5zD4efaw9QkriwKZUpoY8uD42_h3hBPSvxtkr3BDKQLqjy-9vc0bDSHEyJe2_yw4q1A3pOCHUcWz9ry3CuUOipIKQhImLw7-FO48RhVnIM5wFReMqw9zK-v-GZuGcTnF3G06fEjPZLB5Twy8eoBXEH61PIOE_Ommpq1epKF0JakkuTTYtJWQeEhPfzcfrvImuJWVGeI0njzVktQIrf2P4Mj_QT9SaXMcxPB56Y"/>
+<div class="px-2 mt-1">
+<div class="text-sm font-bold">湘菜</div>
+<div class="text-[9px] text-gray-400 flex items-center gap-0.5">香辣下饭 🌶️</div>
+</div>
+</div>
+<!-- Cuisine Card 4 -->
+<div class="min-w-[110px] bg-white rounded-2xl overflow-hidden custom-shadow pb-2">
+<img alt="鲁菜" class="w-full h-24 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKbFbuT4PGw54-z05qS9bqIel-b_2dKqgHQgEJpnuDf6ntCcn8ldDJkJrbNhiYnSu7g5r_yQSXaIDbRskHAS3N2zEjJEzNvpesKPc2QmMuVo4AIK9k-pcE2fhHWdnESifJeMt62REFqqojec2HdwfWzwYbEDKWrh5mpclTsK_M9AhEFjgd15hncaonWTJsUDk5lBVfpJyJg4V9igNoRoTYy-ot_4MoBZh5jotB-ICT02KEG-x1EjBSfLPotaK6TydLASKuzQ79p5dv"/>
+<div class="px-2 mt-1">
+<div class="text-sm font-bold">鲁菜</div>
+<div class="text-[9px] text-gray-400 flex items-center gap-0.5">咸鲜醇厚 🔥</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cuisine Selection -->
+<!-- BEGIN: Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 max-w-[750px] mx-auto bg-white/95 backdrop-blur border-t border-gray-100 px-6 py-2 flex justify-between items-end z-50 h-20" data-purpose="tab-bar">
+<div class="flex flex-col items-center gap-1 pb-2">
+<svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-[10px] text-gray-400">首页</span>
+</div>
+<div class="flex flex-col items-center gap-1 pb-2">
+<div class="w-6 h-6 text-brand-yellow">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z"></path></svg>
+</div>
+<span class="text-[10px] text-brand-text-primary font-bold">分类</span>
+</div>
+<!-- Central raised button -->
+<div class="relative -top-6">
+<div class="w-16 h-16 bg-brand-yellow rounded-full flex items-center justify-center border-8 border-brand-surface shadow-lg">
+<svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+</div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] text-gray-400">发布</span>
+</div>
+<div class="flex flex-col items-center gap-1 pb-2">
+<svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-[10px] text-gray-400">收藏</span>
+</div>
+<div class="flex flex-col items-center gap-1 pb-2">
+<svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-[10px] text-gray-400">我的</span>
+</div>
+</nav>
+<!-- END: Bottom Navigation -->
+<!-- Home Indicator -->
+<div class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1 bg-black rounded-full z-[60]"></div>
+</body></html>

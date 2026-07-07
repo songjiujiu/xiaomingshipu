@@ -1,0 +1,130 @@
+<view class="category-page">
+  <view class="status-bar">
+    <text class="status-time">9:41</text>
+    <view class="status-icons">
+      <view class="signal">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+      <view class="status-tag"></view>
+      <view class="battery">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="header">
+    <view>
+      <view class="brand-title">
+        <text>金小明</text>
+        <text class="brand-highlight">的</text>
+        <text>食谱</text>
+      </view>
+      <text class="brand-subtitle">找到你想做的每一道菜 💛</text>
+    </view>
+    <view class="menu-capsule">
+      <text class="menu-dots">•••</text>
+      <view class="menu-divider"></view>
+      <view class="menu-ring">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="search-wrap">
+    <view class="search-card">
+      <text class="search-icon">⌕</text>
+      <input class="search-input" placeholder="搜索菜系、口味、食材" placeholder-class="search-placeholder" />
+      <button class="search-button">搜索</button>
+    </view>
+  </view>
+
+  <view class="category-section">
+    <view class="section-title-row">
+      <text class="section-title">分类</text>
+      <text class="count-chip">共 24 类</text>
+    </view>
+    <view class="category-grid">
+      <view class="category-item" wx:for="{{categories}}" wx:key="name">
+        <view class="category-icon {{item.color}}">
+          <text wx:if="{{!item.grid}}">{{item.icon}}</text>
+          <view wx:else class="small-grid">
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+        </view>
+        <text class="category-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="hot-section">
+    <view class="section-title-row hot-title">
+      <text class="fire">🔥</text>
+      <text class="section-title">热门分类</text>
+    </view>
+    <view class="hot-grid">
+      <view class="hot-card" wx:for="{{hotCategories}}" wx:key="title" bindtap="goDetail">
+        <view class="hot-copy">
+          <text class="hot-title-text"><text class="hot-icon">{{item.icon}}</text>{{item.title}}</text>
+          <text class="hot-desc">{{item.desc}}</text>
+        </view>
+        <image class="hot-image" src="{{item.image}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+
+  <view class="ingredient-section">
+    <text class="section-title">按食材查找</text>
+    <view class="ingredient-grid">
+      <view class="ingredient-card" wx:for="{{ingredients}}" wx:key="name">
+        <image class="ingredient-image" src="{{item.image}}" mode="aspectFill" />
+        <text class="ingredient-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="cuisine-section">
+    <view class="section-head">
+      <text class="section-title">菜系精选</text>
+      <view class="more-link">
+        <text>查看全部</text>
+        <text>›</text>
+      </view>
+    </view>
+    <scroll-view class="cuisine-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="cuisine-track">
+        <view class="cuisine-card" wx:for="{{cuisines}}" wx:key="name" bindtap="goDetail">
+          <image class="cuisine-image" src="{{item.image}}" mode="aspectFill" />
+          <view class="cuisine-copy">
+            <text class="cuisine-name">{{item.name}}</text>
+            <text class="cuisine-desc">{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="bottom-nav">
+    <view
+      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
+      wx:for="{{navs}}"
+      wx:key="name"
+      data-url="{{item.url}}"
+      bindtap="onNavTap"
+    >
+      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
+      <text wx:else class="nav-icon">{{item.icon}}</text>
+      <text class="nav-label">{{item.name}}</text>
+    </view>
+  </view>
+  <view class="home-indicator"></view>
+</view>

@@ -1,0 +1,108 @@
+<view class="lottery-page">
+  <view class="header">
+    <view>
+      <view class="brand-title">
+        <text>金小明</text>
+        <text class="brand-highlight">的</text>
+        <text>食谱</text>
+      </view>
+      <text class="brand-subtitle">抽一抽，决定今天准备吃啥 💛</text>
+    </view>
+    <view class="menu-capsule">
+      <text class="menu-dots">•••</text>
+      <view class="menu-divider"></view>
+      <view class="menu-ring">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view class="tab-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+    <view class="tab-track">
+      <view class="food-tab {{item.active ? 'tab-active' : ''}}" wx:for="{{tabs}}" wx:key="name">
+        <text class="tab-icon">{{item.icon}}</text>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="lottery-box">
+    <view
+      class="lottery-cell {{activeIndex === index ? 'cell-active' : ''}} {{item.button ? 'start-cell' : ''}}"
+      wx:for="{{cells}}"
+      wx:key="index"
+      data-button="{{item.button}}"
+      bindtap="onCellTap"
+    >
+      <block wx:if="{{item.button}}">
+        <text class="start-text">{{isDrawing ? '抽取中' : '开始'}}</text>
+        <text class="start-text">{{isDrawing ? '...' : '抽奖'}}</text>
+      </block>
+      <block wx:else>
+        <text class="cell-title">{{item.title}}</text>
+        <image class="cell-image" src="{{item.image}}" mode="aspectFill" />
+      </block>
+    </view>
+  </view>
+
+  <view class="result-card">
+    <view class="result-heading">
+      <text class="star">⭐</text>
+      <text class="result-title">今日抽中</text>
+      <text class="spark">✨</text>
+    </view>
+    <view class="result-content">
+      <image class="result-image" src="{{result.image}}" mode="aspectFill" />
+      <view class="result-info">
+        <view class="result-title-row">
+          <text class="dish-name">{{result.title}}</text>
+          <text class="dish-tag">{{result.tag}}</text>
+        </view>
+        <text class="dish-desc">{{result.desc}}</text>
+        <view class="dish-meta">
+          <text>◷ {{result.time}}</text>
+          <text>♙ {{result.people}}</text>
+        </view>
+      </view>
+      <view class="result-actions">
+        <button class="primary-button" bindtap="goDetail">查看做法</button>
+        <button class="secondary-button" bindtap="startLottery">↻ 换一个</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="alternative-section">
+    <view class="alternative-header">
+      <view class="alternative-title-row">
+        <text class="thumb">👍</text>
+        <text class="alternative-title">今日备选</text>
+        <text class="alternative-sub">这些菜也很不错哦</text>
+      </view>
+      <view class="change-batch" bindtap="startLottery">
+        <text>换一批</text>
+        <text>↻</text>
+      </view>
+    </view>
+    <view class="alternative-grid">
+      <view class="alternative-card" wx:for="{{alternatives}}" wx:key="title" bindtap="goDetail">
+        <image class="alternative-image" src="{{item.image}}" mode="aspectFill" />
+        <text class="alternative-name">{{item.title}}</text>
+        <text class="alternative-time">◷ {{item.time}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom-nav">
+    <view
+      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
+      wx:for="{{navs}}"
+      wx:key="name"
+      data-url="{{item.url}}"
+      bindtap="onNavTap"
+    >
+      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
+      <text wx:else class="nav-icon">{{item.icon}}</text>
+      <text class="nav-label">{{item.name}}</text>
+    </view>
+  </view>
+</view>

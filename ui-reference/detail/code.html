@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>照烧鸡腿饭 - 金小明的食谱</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'app-yellow': '#FFD100',
+            'app-bg': '#F9F9F9',
+            'app-text-main': '#333333',
+            'app-text-sub': '#999999',
+            'app-orange': '#FF8A00',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    /* Hide scrollbars for cleaner mobile look */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #FDFDFD;
+    }
+  </style>
+</head>
+<body class="max-w-[750px] mx-auto text-app-text-main pb-24">
+<!-- BEGIN: Navigation Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md px-4 py-3 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<!-- Back Arrow -->
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<h1 class="text-xl font-bold">金小明<span class="text-app-yellow">的</span>食谱</h1>
+</div>
+<div class="flex items-center space-x-3 bg-gray-100/50 rounded-full px-3 py-1.5 border border-gray-100">
+<button>
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></svg>
+</button>
+<div class="w-px h-4 bg-gray-300"></div>
+<button>
+<svg class="h-5 w-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10" stroke-width="2"></circle>
+<circle cx="12" cy="12" fill="currentColor" r="3"></circle>
+</svg>
+</button>
+</div>
+</header>
+<!-- END: Navigation Header -->
+<!-- BEGIN: Hero Section -->
+<section class="px-4 mt-2 relative">
+<div class="rounded-3xl overflow-hidden shadow-sm aspect-[4/3] relative">
+<img alt="照烧鸡腿饭" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU2m-QRvRY9cjejRFEa5NOLQZkq_5tUdox5D8i2fodqMErCyPwX-_wONHZvtcafS-vKNimjnNfUyFFeSvV8AAw5ZwNUlOwkvIh7hGS1C445OBK2m24Lsvtq_8MZksbj7m-i47GQfgKo0Er_aEHonWnVIYIbRieGTuyOc3FiJlJS6YqlKYFIFX6UXQzeYag6hAiGPie8cz2Hx8PQq-1012yvktyvdd_3w3f9sGyu2-vj5Mw2-zMLuvIRbBShN67Yvcjk3blp1HYs7mS"/>
+<!-- Image Counter -->
+<div class="absolute top-4 right-4 bg-black/30 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full flex items-center">
+<svg class="h-3 w-3 mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+</svg>
+        1/6
+      </div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Recipe Info -->
+<section class="px-6 py-5">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="text-3xl font-bold mb-2">照烧鸡腿饭</h2>
+<p class="text-app-text-sub text-sm">酱香浓郁，简单美味，一人食首选</p>
+</div>
+</div>
+<!-- Rating Stats -->
+<div class="flex items-center space-x-3 mt-4">
+<div class="flex items-center bg-yellow-50 px-2 py-1 rounded-md">
+<span class="text-app-yellow text-sm">★</span>
+<span class="ml-1 text-sm font-bold">4.9</span>
+</div>
+<div class="flex items-center bg-red-50 px-2 py-1 rounded-md">
+<span class="text-red-400 text-sm">❤️</span>
+<span class="ml-1 text-sm font-bold">1.2w</span>
+</div>
+<div class="flex items-center bg-orange-50 px-2 py-1 rounded-md">
+<span class="text-app-orange text-sm">📁</span>
+<span class="ml-1 text-sm font-bold">8563</span>
+</div>
+</div>
+<!-- Quick Stats -->
+<div class="flex items-center space-x-6 mt-5 text-sm text-app-text-sub">
+<div class="flex items-center"><span class="mr-1">🕒</span> 20分钟</div>
+<div class="flex items-center"><span class="mr-1">🍳</span> 简单</div>
+<div class="flex items-center"><span class="mr-1">👥</span> 1人份</div>
+</div>
+<!-- Cost Estimate -->
+<div class="mt-4 bg-yellow-50/50 rounded-2xl p-3 flex justify-between items-center border border-yellow-100">
+<div class="flex items-center">
+<span class="bg-app-yellow text-white p-1 rounded-md mr-2">💰</span>
+<span class="font-medium text-app-text-main">预计花费</span>
+</div>
+<span class="text-app-orange font-bold text-lg">¥12-18</span>
+</div>
+</section>
+<!-- END: Recipe Info -->
+<!-- BEGIN: Creator Card -->
+<section class="px-4 mx-4 bg-white rounded-2xl p-4 shadow-sm border border-gray-50 mb-6">
+<div class="flex items-start">
+<div class="relative">
+<img alt="Avatar" class="w-12 h-12 rounded-full border-2 border-white shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaJi9KwG1_1jYhmhpnhUlCLqse02xETr3c9m0PDNmeR-MDRpZi8MYcYRmu7Rhe2hdnCU3nZ30kON1kuv4MdM-o3_qPAxrWv46e552hgUgf2cnVbJUbIiH9aOYHtTCVtSYe0ePR_BUV19pcTP6Pa0sEe3fwSwLFgrsMRLxvjQhPtKP1ZkmY4cqVRVP-ftJhYn_DTi2jwiahWc77YW7LFpApYDqM6ODu0LmLKSdIxWvdCsJ8rMkdCCuj9bwHGBE0JrXZFa3IaBawEwYK"/>
+<div class="absolute -bottom-1 -right-1 bg-yellow-400 rounded-full border-2 border-white">
+<svg class="w-3 h-3 text-white" fill="currentColor" viewbox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+</div>
+</div>
+<div class="ml-3 flex-1">
+<div class="flex items-center">
+<span class="font-bold text-lg">金小明</span>
+<span class="ml-1 text-yellow-400">✨</span>
+</div>
+<p class="text-xs text-app-text-sub">分享美食的快乐 ❤️</p>
+</div>
+</div>
+<div class="mt-3 text-sm text-gray-500 leading-relaxed bg-gray-50/50 p-3 rounded-xl italic">
+      "这道照烧鸡腿饭是我最喜欢的快手餐之一，鸡腿鲜嫩多汁，配上甜咸适中的照烧酱汁，搭配清爽的蔬菜，营养均衡又美味。无论是忙碌的工作日还是懒洋洋的周末，都能轻松搞定一顿让人满足的饭！✨"
+    </div>
+</section>
+<!-- END: Creator Card -->
+<!-- BEGIN: Flavor Tags -->
+<section class="px-6 mb-6">
+<div class="flex flex-wrap gap-2">
+<span class="flex items-center text-xs font-bold mr-1">🔥 风味标签</span>
+<span class="bg-red-50 text-red-500 px-3 py-1.5 rounded-full text-xs">甜咸适中</span>
+<span class="bg-green-50 text-green-600 px-3 py-1.5 rounded-full text-xs">酱香浓郁</span>
+<span class="bg-orange-50 text-orange-500 px-3 py-1.5 rounded-full text-xs">家常美味</span>
+<span class="bg-blue-50 text-blue-500 px-3 py-1.5 rounded-full text-xs">快手菜</span>
+<span class="bg-purple-50 text-purple-500 px-3 py-1.5 rounded-full text-xs">下饭神器</span>
+</div>
+</section>
+<!-- END: Flavor Tags -->
+<!-- BEGIN: Ingredients -->
+<section class="px-4 mb-6">
+<div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-50">
+<div class="flex items-center mb-4">
+<span class="text-green-500 mr-2">🌿</span>
+<h3 class="font-bold text-lg">食材亮点</h3>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-4 pb-2">
+<!-- Ingredient Item -->
+<div class="flex-shrink-0 text-center w-20">
+<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-2">
+<img alt="鸡腿肉" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADs8YPzAmLHbz-eRlGk8HUl--XlmB8NZGUHT2pSdGcp7eERHjitTjhMd80bhHICVc41MMMMqjlHkd47NHID_IQZe3Zh_2PxEvLVbQDcpZzQlhopLz_p5lvb6PHVoESHD0nYHljKh1yxHLOXHtMY_znvVDxhBgMkaqqlBScZq_8zulorB-Y1KSAnI9yiqAx7mNm6KzGNw6OND9YAbFIOzezpSEeeh3hOYelP95wvHjDfgx3YAi3ryhe866cCfh8z__J0ZP4ZOtHy_D3"/>
+</div>
+<p class="text-sm font-medium">鸡腿肉</p>
+<p class="text-[10px] text-app-text-sub">鲜嫩多汁</p>
+</div>
+<!-- Ingredient Item -->
+<div class="flex-shrink-0 text-center w-20">
+<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-2">
+<img alt="西兰花" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANPeIJJEewG_JNJEg50XPb5Ni_CGySiT3npFxUiT0vtaji0Bru4hTvAjsJkeDMrC1_SnHV2jFd4zHkmW_vjCCg5N_bgPkoaCIhKe_VIszcCxSx1b-upPG47-fDVzOje3CIHbkKeEg_yi2qWWZ53Yusx8eiv1j5nS_CzgtwWzT0njYIEli0i6hDFVeMeYm4sCrOiZzYbfChIznzdizCngTXEVw3qoMOO6wsr3ma8rL8e8U01zp_jt8HPdDBh-XtWlfCrKJR5guoOaE5"/>
+</div>
+<p class="text-sm font-medium">西兰花</p>
+<p class="text-[10px] text-app-text-sub">清爽解腻</p>
+</div>
+<!-- Ingredient Item -->
+<div class="flex-shrink-0 text-center w-20">
+<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-2">
+<img alt="胡萝卜" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YrH8q6XuWlOoVBtBb64vKL-Bj3pdPTGIssORtByZN0QmtUASINZFWUJQyR2uLqdfYBwvw7GP0WOaNmLjTBvG9tCHc17j7TZjBFDkFhrKlaJ0MO6McgCYxwJZ6PMbjpIITlFupXg-n354rbjaK34fJSTaR9e8PZc-wAXZByPh2LVSi7IOPv1z-YCXxvkWppELwaADm5XwP6FNTHedmPQbl45Yj0G9eT1BGaV6okceEpqq-1MG_vJSKlAX0mYtJ3iQEDHMn6UaRNP1"/>
+</div>
+<p class="text-sm font-medium">胡萝卜</p>
+<p class="text-[10px] text-app-text-sub">维生素丰富</p>
+</div>
+<!-- Ingredient Item -->
+<div class="flex-shrink-0 text-center w-20">
+<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-2">
+<img alt="大米" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHPA1EMVpM3_uRJpn778JytfdCf7KGoGIYa5m5jQBH5DdeTe1U1sKhdMZcV8G6-ykuPudDoC9zhUKK46yQDSMuOJp3BovbhzNj3bVDPOhaol-Df-cylsPGg-4NnaWennwJKZpBlDplYua1XEjlTS-Jy2hcUtzDcLFVLso86o0rCvRo2mnRQErSIRpHZ4skOVuTfnYOa9yVvCFzbNT9tXZJZzdtirylQ141LGvZXv12uN9Z4HSpmt6sI3k6034IP0iOSLWZzU-iHSqj"/>
+</div>
+<p class="text-sm font-medium">大米</p>
+<p class="text-[10px] text-app-text-sub">饱满香软</p>
+</div>
+<!-- Ingredient Item -->
+<div class="flex-shrink-0 text-center w-20">
+<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-2">
+<img alt="照烧酱" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnW7NqFpU-oNR0UGH55kwc4vsXhEVsEMyZFawsl1kuDE36D3dTjkL_uV99GRvf0iE2oYaqjheHH4PJeNOKf0cWD9WSDy2h_UyvBSHHkz0oEjHseVTdcTQ7bXePftG34B2xR4OUU30aeF5T1XDww_yfS1KB0InT1jMvMzNRXtLttMjneLhMgVlBD5qCC4j0_iZg_VbyyCU0rkYUepxQr2GrmXGPXST2SbwA0I0gfZaCsqEYG1SAxsxAUnzHrIFtxXHYwxOvKOtYOw8W"/>
+</div>
+<p class="text-sm font-medium">照烧酱</p>
+<p class="text-[10px] text-app-text-sub">灵魂酱汁</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Ingredients -->
+<!-- BEGIN: Nutrition -->
+<section class="px-4 mb-6">
+<div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-50">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center">
+<span class="text-orange-400 mr-2">🧡</span>
+<h3 class="font-bold text-lg">营养成分</h3>
+<span class="ml-2 text-[10px] text-app-text-sub">(每份)</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<div class="text-center">
+<div class="relative inline-block mb-1">
+<div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+<span class="text-xs">🔥</span>
+</div>
+</div>
+<p class="text-sm font-bold">568</p>
+<p class="text-[10px] text-app-text-sub">千卡</p>
+</div>
+<div class="text-center">
+<div class="relative inline-block mb-1">
+<div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+<span class="text-xs">🧬</span>
+</div>
+</div>
+<p class="text-sm font-bold">32.6g</p>
+<p class="text-[10px] text-app-text-sub">蛋白质</p>
+</div>
+<div class="text-center">
+<div class="relative inline-block mb-1">
+<div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+<span class="text-xs">🔋</span>
+</div>
+</div>
+<p class="text-sm font-bold">72.3g</p>
+<p class="text-[10px] text-app-text-sub">碳水化合物</p>
+</div>
+<div class="text-center">
+<div class="relative inline-block mb-1">
+<div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center">
+<span class="text-xs">💧</span>
+</div>
+</div>
+<p class="text-sm font-bold">16.8g</p>
+<p class="text-[10px] text-app-text-sub">脂肪</p>
+</div>
+</div>
+<p class="mt-4 text-[10px] text-app-text-sub">* 数据为估算值，实际营养因用料有所差异</p>
+</div>
+</section>
+<!-- END: Nutrition -->
+<!-- BEGIN: Recommendations -->
+<section class="px-4 mb-6">
+<div class="flex items-center mb-3 px-2">
+<span class="text-orange-400 mr-2">👍</span>
+<h3 class="font-bold text-lg">推荐理由</h3>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-yellow-50/50 p-3 rounded-2xl border border-yellow-100">
+<div class="text-xl mb-1">😊</div>
+<p class="text-xs font-bold">简单快手</p>
+<p class="text-[9px] text-app-text-sub mt-0.5">20分钟左右即可完成</p>
+</div>
+<div class="bg-red-50/50 p-3 rounded-2xl border border-red-100">
+<div class="text-xl mb-1">❤️</div>
+<p class="text-xs font-bold">营养均衡</p>
+<p class="text-[9px] text-app-text-sub mt-0.5">荤素搭配，营养丰富</p>
+</div>
+<div class="bg-yellow-50/50 p-3 rounded-2xl border border-yellow-100">
+<div class="text-xl mb-1">⭐</div>
+<p class="text-xs font-bold">孩子爱吃</p>
+<p class="text-[9px] text-app-text-sub mt-0.5">酱香浓郁，开胃下饭</p>
+</div>
+</div>
+</section>
+<!-- END: Recommendations -->
+<!-- BEGIN: Related Recipes -->
+<!-- BEGIN: Cooking Steps -->
+<section class="px-4 mb-6">
+<div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-50">
+<div class="flex items-center mb-4">
+<span class="text-app-yellow mr-2">🍳</span>
+<h3 class="font-bold text-lg">制作步骤</h3>
+</div>
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center text-xs font-bold text-app-text-main mt-0.5">1</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-main leading-relaxed">鸡腿去骨，洗净后用厨房纸吸干水分，两面划几刀，方便入味。</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center text-xs font-bold text-app-text-main mt-0.5">2</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-main leading-relaxed">放入照烧酱、生抽、料酒、蜂蜜、蒜末，抓匀腌制15分钟以上。</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center text-xs font-bold text-app-text-main mt-0.5">3</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-main leading-relaxed">热锅倒油，放入鸡腿皮面朝下煎至金黄，翻面煎2分钟。</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center text-xs font-bold text-app-text-main mt-0.5">4</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-main leading-relaxed">倒入剩余酱汁，小火焖煮5分钟，收汁至浓稠即可。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cooking Steps --><section class="px-4 mb-6">
+<div class="flex items-center justify-between mb-3 px-2">
+<div class="flex items-center">
+<span class="text-green-600 mr-2">🍵</span>
+<h3 class="font-bold text-lg">相关菜谱</h3>
+</div>
+<button class="text-app-text-sub text-xs flex items-center">
+        查看更多 <svg class="w-3 h-3 ml-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+</button>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-4 pb-2">
+<!-- Related Item -->
+<div class="flex-shrink-0 w-24">
+<img alt="番茄鸡蛋汤" class="w-24 h-24 rounded-2xl object-cover mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfkrSOTeTSDpXJShiLg8swu5Ns7NRF-xshDuQtOWg8Sggrt3pyRGvkYGWd8bLpZ8KietFB7If1kFhW7KoaYN3SAGb1cb1peNfdRo4y1k4yVGika-6NgHPhiT9Wt1zrWd1xy7Eyf_l-OHaPUwH02h-hWLfGC1vWTKBaFPD7_kkMY9JKgRXJWRUgoYJSa7aTjghw1K4lXhhAvYElwZvkZsoZE7ltfdxSv7ZoLkYrasIHueJ4bKUuKAHwskUwA-9vIs0ctwLlbO8FTtZp"/>
+<p class="text-[11px] text-center font-medium">番茄鸡蛋汤</p>
+</div>
+<!-- Related Item -->
+<div class="flex-shrink-0 w-24">
+<img alt="清炒时蔬" class="w-24 h-24 rounded-2xl object-cover mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWKX3bohN_cP9XV955UurJur9kiLpFD8ugGJPZeEHpYvRL00TtjBJ1fQ4MpLLf-12zm4NDkvG23R2L1gPKWpQg3hvMod9MHg-YyHcMkUEE78JWdnCpq8a_GtbP62y4IFaa1jTS6ffqCbuHzsu9u010Hq0oODYhAQA7bbQUzC1qRKgWJPmul7XXPCtTSJ206r1nKYh8mO9EdU0E4sufSgoKYg3an6vHSurJpWn2TlWzLToEBI7ookl3VVn_AcM8Av5usibhvHGDtYaD"/>
+<p class="text-[11px] text-center font-medium">清炒时蔬</p>
+</div>
+<!-- Related Item -->
+<div class="flex-shrink-0 w-24">
+<img alt="红烧鸡翅" class="w-24 h-24 rounded-2xl object-cover mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFtAmFRNXi7v-CANPRmBOTzyyRsB0_2whVlpaP_F0xMkWAHqHLRAViTBB4D4s3Zg3j-zA-LzWxfiHX-9owO2TPsLpIgNXsMIjWe1vcKI2ZS3Ll4wljz78-fA35Zy3IcySVLQ5r1rMR0RQaN7llQSEpyHSgG1m7hmQEX16Ou9tyv9NkTpXrgpAmcrxolH61uHQgT1aLvy1xbWevpjtQJMpJMrJ_ZPl-F4UXtUIgQm3pHprovpOn1q8TCaB59LuEBsE3pDVU1MTBCB3A"/>
+<p class="text-[11px] text-center font-medium">红烧鸡翅</p>
+</div>
+<!-- Related Item -->
+<div class="flex-shrink-0 w-24">
+<img alt="土豆红烧肉" class="w-24 h-24 rounded-2xl object-cover mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrygHmYiOBC6SI3pZjSwUu3XdNViAiaQWTSuSiE-6VhHlv6szcgLTgr-a8yPi-7bbsUL4kOTqtuqXo5lSRs6Ygr6Lap_zatC09-b-J_IuaKOkOE8wVMUC6P6Ql88Zw86P7hGl-drzlh_dBiaeK9tG8jD1eCql7XvQHiHw1bhG-paz6292hxyaq6x-IY2NKstxkbOCG8usKwi_e-oEbI_5aIsc2AFuc-OQDsrm8uauPohTjsC7q3SmaNrWKhEicWDRJKiqAPvZbYSuM"/>
+<p class="text-[11px] text-center font-medium">土豆红烧肉</p>
+</div>
+<!-- Related Item -->
+<div class="flex-shrink-0 w-24">
+<img alt="轻乳酪蛋糕" class="w-24 h-24 rounded-2xl object-cover mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWXU4xNY12-8stHd0kSuH5aU07AcmRAtUCtt_8hxqxD2j1Vre0drONDELARFpFs6R5KM8lODryhub-FQHZa36l6PipheiyIWEqUpTZWT15L2XSyI2F7JdZtfSUmqYLsKmtWVf_uuzBp5pJvIMdCp6qrOJ7kkbmlGkFAErzxZ5O5kcvmHLNFl_4jAl6f8b0oE6FOyTH7CrVEjLcAXmGOmt4P4mH3hqpMVi9tYARTUI2EVTo7_eIfPU4zvWMohrZ1kJj2K8qJxIaVCn"/>
+<p class="text-[11px] text-center font-medium">轻乳酪蛋糕</p>
+</div>
+</div>
+</section>
+<!-- END: Related Recipes -->
+<!-- BEGIN: Reviews Section -->
+<section class="px-4 mb-20">
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex items-center">
+<span class="text-green-500 mr-2">💬</span>
+<h3 class="font-bold text-lg">大家的评价 <span class="text-app-text-sub font-normal text-sm ml-1">(128)</span></h3>
+</div>
+<button class="text-app-text-sub text-xs flex items-center bg-gray-100 px-3 py-1.5 rounded-full">
+        写评价 <span class="ml-1 text-sm">✎</span>
+</button>
+</div>
+<!-- User Review -->
+<div class="bg-white rounded-3xl p-4 shadow-sm border border-gray-50">
+<div class="flex items-start justify-between">
+<div class="flex items-center">
+<img alt="Reviewer" class="w-10 h-10 rounded-full mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLG5jI4DrFaazWc-Y7Ggw71zizU1pUv7LWIHgf4aTqIQ74WWUEBbPdn08Y2AG5h0dnj0P-cr91ujgMEKgoR5Sb0Oi-6dp4jPG5g34EZtMytDJ18g4nEQydi5G-vcDaMWDkl5242fYekc1FIapvGDmW3scBCZojwb_8sPLSD-XgmbmzlIsxC-UXg1YZp5LTAb65d1zUDhVgXPdody5ltQNoJy17hA2gHIHBm9s0rOWjQvtWwAZPOBVvYTput9AxD0wqXxA_MB-OYymH"/>
+<div>
+<div class="flex items-center">
+<span class="font-bold text-sm mr-2">小饭团团</span>
+<span class="bg-app-yellow text-[9px] text-white px-1.5 py-0.5 rounded italic">Lv.6</span>
+</div>
+<div class="flex text-app-yellow text-[10px] mt-0.5">
+              ★★★★★
+            </div>
+</div>
+</div>
+<span class="text-[10px] text-app-text-sub">2天前</span>
+</div>
+<div class="flex mt-3">
+<div class="flex-1 pr-3">
+<p class="text-xs text-app-text-main leading-relaxed">照着做了一次，超级好吃！鸡腿很嫩，酱汁也很入味，全家都喜欢～</p>
+</div>
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
+<img alt="User result" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU2m-QRvRY9cjejRFEa5NOLQZkq_5tUdox5D8i2fodqMErCyPwX-_wONHZvtcafS-vKNimjnNfUyFFeSvV8AAw5ZwNUlOwkvIh7hGS1C445OBK2m24Lsvtq_8MZksbj7m-i47GQfgKo0Er_aEHonWnVIYIbRieGTuyOc3FiJlJS6YqlKYFIFX6UXQzeYag6hAiGPie8cz2Hx8PQq-1012yvktyvdd_3w3f9sGyu2-vj5Mw2-zMLuvIRbBShN67Yvcjk3blp1HYs7mS"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Reviews Section -->
+<!-- BEGIN: Floating Bottom Bar -->
+<div class="fixed bottom-0 left-0 right-0 max-w-[750px] mx-auto bg-white/90 backdrop-blur-lg border-t border-gray-100 px-6 py-4 flex items-center justify-between z-50">
+<div class="flex items-center space-x-6">
+<!-- Save Button -->
+<div class="text-center">
+<div class="text-app-yellow text-2xl">⭐</div>
+<p class="text-[10px] text-app-text-sub">收藏</p>
+<p class="text-[9px] text-app-text-sub mt-0.5">8563</p>
+</div>
+<!-- Add to Menu -->
+<div class="bg-yellow-50 rounded-2xl px-4 py-3 flex items-center h-12">
+<span class="text-app-yellow mr-2 text-xl">📋</span>
+<span class="text-xs font-bold text-app-text-main">加入今日菜单</span>
+</div>
+</div>
+<!-- Large Action Button -->
+<button class="bg-app-yellow hover:bg-yellow-400 transition-colors text-app-text-main font-bold py-3 px-8 rounded-full flex items-center h-12">
+      查看做法 <span class="ml-2 bg-app-text-main text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]">▶</span>
+</button>
+</div>
+<!-- END: Floating Bottom Bar -->
+</body></html>

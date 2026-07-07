@@ -1,0 +1,191 @@
+<view class="detail-page">
+  <view class="detail-nav">
+    <view class="nav-left" bindtap="goBack">
+      <text class="back-icon">‹</text>
+      <view class="nav-title">
+        <text>金小明</text>
+        <text class="nav-highlight">的</text>
+        <text>食谱</text>
+      </view>
+    </view>
+    <view class="menu-capsule">
+      <text class="menu-dots">•••</text>
+      <view class="menu-divider"></view>
+      <view class="menu-ring">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="hero-section">
+    <view class="hero-image-wrap">
+      <image class="hero-image" src="{{heroImage}}" mode="aspectFill" />
+      <view class="image-count">▧ 1/6</view>
+    </view>
+  </view>
+
+  <view class="recipe-info">
+    <text class="recipe-title">照烧鸡腿饭</text>
+    <text class="recipe-desc">酱香浓郁，简单美味，一人食首选</text>
+    <view class="rating-row">
+      <view class="rating-chip yellow-chip">★ <text>4.9</text></view>
+      <view class="rating-chip red-chip">♥ <text>1.2w</text></view>
+      <view class="rating-chip orange-chip">▣ <text>8563</text></view>
+    </view>
+    <view class="quick-stats">
+      <text>◷ 20分钟</text>
+      <text>⌕ 简单</text>
+      <text>♙ 1人份</text>
+    </view>
+    <view class="cost-card">
+      <view class="cost-left">
+        <text class="cost-icon">💰</text>
+        <text>预计花费</text>
+      </view>
+      <text class="cost-value">¥12-18</text>
+    </view>
+  </view>
+
+  <view class="creator-card">
+    <view class="creator-top">
+      <image class="avatar" src="{{authorAvatar}}" mode="aspectFill" />
+      <view class="creator-copy">
+        <view>
+          <text class="creator-name">金小明</text>
+          <text class="verified">✦</text>
+        </view>
+        <text class="creator-sub">分享美食的快乐 ❤️</text>
+      </view>
+    </view>
+    <view class="creator-note">
+      “这道照烧鸡腿饭是我最喜欢的快手餐之一，鸡腿鲜嫩多汁，配上甜咸适中的照烧酱汁，搭配清爽的蔬菜，营养均衡又美味。无论是忙碌的工作日还是懒洋洋的周末，都能轻松搞定一顿让人满足的饭！”
+    </view>
+  </view>
+
+  <view class="tag-section">
+    <text class="tag-title">🔥 风味标签</text>
+    <text class="tag tag-red">甜咸适中</text>
+    <text class="tag tag-green">酱香浓郁</text>
+    <text class="tag tag-orange">家常美味</text>
+    <text class="tag tag-blue">快手菜</text>
+    <text class="tag tag-purple">下饭神器</text>
+  </view>
+
+  <view class="content-card">
+    <view class="card-title-row">
+      <text class="title-icon green">🌿</text>
+      <text class="card-title">食材亮点</text>
+    </view>
+    <scroll-view class="ingredient-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="ingredient-track">
+        <view class="ingredient-item" wx:for="{{ingredients}}" wx:key="name">
+          <view class="ingredient-image-wrap">
+            <image class="ingredient-image" src="{{item.image}}" mode="aspectFit" />
+          </view>
+          <text class="ingredient-name">{{item.name}}</text>
+          <text class="ingredient-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="content-card">
+    <view class="card-title-row">
+      <text class="title-icon orange">🧡</text>
+      <text class="card-title">营养成分</text>
+      <text class="muted">(每份)</text>
+    </view>
+    <view class="nutrition-grid">
+      <view class="nutrition-item" wx:for="{{nutrition}}" wx:key="label">
+        <view class="nutrition-icon {{item.color}}">{{item.icon}}</view>
+        <text class="nutrition-value">{{item.value}}</text>
+        <text class="nutrition-label">{{item.label}}</text>
+      </view>
+    </view>
+    <text class="nutrition-tip">* 数据为估算，实际营养因用料有所差异</text>
+  </view>
+
+  <view class="reason-section">
+    <view class="section-title-row">
+      <text class="title-icon orange">👍</text>
+      <text class="card-title">推荐理由</text>
+    </view>
+    <view class="reason-grid">
+      <view class="reason-card" wx:for="{{reasons}}" wx:key="title">
+        <text class="reason-icon">{{item.icon}}</text>
+        <text class="reason-title">{{item.title}}</text>
+        <text class="reason-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="content-card">
+    <view class="card-title-row">
+      <text class="title-icon yellow">🍳</text>
+      <text class="card-title">制作步骤</text>
+    </view>
+    <view class="step-item" wx:for="{{steps}}" wx:key="*this">
+      <text class="step-index">{{index + 1}}</text>
+      <text class="step-text">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="related-section">
+    <view class="section-head">
+      <view class="section-title-row">
+        <text class="title-icon green">🍽</text>
+        <text class="card-title">相关菜谱</text>
+      </view>
+      <text class="more-link">查看更多 ›</text>
+    </view>
+    <scroll-view class="related-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="related-track">
+        <view class="related-item" wx:for="{{related}}" wx:key="name">
+          <image class="related-image" src="{{item.image}}" mode="aspectFill" />
+          <text class="related-name">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="review-section">
+    <view class="section-head">
+      <view class="section-title-row">
+        <text class="title-icon green">💬</text>
+        <text class="card-title">大家的评价</text>
+        <text class="muted">(128)</text>
+      </view>
+      <text class="write-review">写评价 ✎</text>
+    </view>
+    <view class="review-card">
+      <view class="review-top">
+        <image class="review-avatar" src="{{reviewerAvatar}}" mode="aspectFill" />
+        <view class="review-user">
+          <view>
+            <text class="review-name">小饭团团</text>
+            <text class="level">Lv.6</text>
+          </view>
+          <text class="stars">★★★★★</text>
+        </view>
+        <text class="review-time">2天前</text>
+      </view>
+      <view class="review-body">
+        <text class="review-text">照着做了一次，超级好吃！鸡腿很嫩，酱汁也很入味，全家都喜欢～</text>
+        <image class="review-photo" src="{{heroImage}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom-action">
+    <view class="save-block">
+      <text class="save-star">★</text>
+      <text class="save-label">收藏</text>
+      <text class="save-count">8563</text>
+    </view>
+    <view class="menu-button">
+      <text class="menu-button-icon">📋</text>
+      <text>加入今日菜单</text>
+    </view>
+    <button class="cook-button">查看做法 <text>▶</text></button>
+  </view>
+</view>

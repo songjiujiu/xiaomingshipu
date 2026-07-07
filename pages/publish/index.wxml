@@ -1,0 +1,117 @@
+<view class="publish-page">
+  <view class="status-bar">
+    <text>9:41</text>
+    <view class="status-icons">
+      <view class="status-drop"></view>
+      <view class="status-circle"></view>
+      <view class="battery"><view></view></view>
+    </view>
+  </view>
+
+  <view class="top-bar">
+    <view class="back-button" bindtap="goBack">‹</view>
+    <text class="page-title">发布食谱</text>
+    <text class="more-button">⋮</text>
+  </view>
+
+  <scroll-view class="form-scroll" scroll-y>
+    <view class="form-content">
+      <view class="cover-uploader">
+        <view class="eye-bubble">◉</view>
+        <text class="cover-title">上传封面图</text>
+      </view>
+      <text class="cover-tip">建议 1:1 比例，清晰图更好</text>
+
+      <view class="form-section">
+        <text class="label">食谱名称 <text class="required">*</text></text>
+        <view class="input-wrap">
+          <input class="text-input" placeholder="给你的菜谱起个诱人的名字吧~" placeholder-class="placeholder" maxlength="30" />
+        </view>
+        <text class="counter">0/30</text>
+      </view>
+
+      <view class="select-grid">
+        <view class="select-field">
+          <text class="label">口味</text>
+          <view class="select-box">
+            <text class="select-icon">😊</text>
+            <text class="select-placeholder">请选择</text>
+            <text class="select-arrow">⌄</text>
+          </view>
+        </view>
+        <view class="select-field">
+          <text class="label">难度</text>
+          <view class="select-box">
+            <text class="select-icon muted-icon">—</text>
+            <text class="select-placeholder">请选择</text>
+            <text class="select-arrow">⌄</text>
+          </view>
+        </view>
+        <view class="select-field">
+          <text class="label">时长</text>
+          <view class="select-box">
+            <text class="select-icon muted-icon">◷</text>
+            <text class="select-placeholder">请选择</text>
+            <text class="select-arrow">⌄</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="section-head">
+        <text class="label">食材清单 <text class="required">*</text></text>
+        <button class="add-button">+ 添加食材</button>
+      </view>
+
+      <view class="ingredient-list">
+        <view class="ingredient-row" wx:for="{{ingredients}}" wx:key="name">
+          <input class="ingredient-input" value="{{item.name}}" />
+          <input class="ingredient-input" value="{{item.amount}}" />
+          <text class="remove-button">×</text>
+        </view>
+      </view>
+      <text class="expand-more">展开更多</text>
+
+      <view class="section-head steps-head">
+        <text class="label">制作步骤 <text class="required">*</text></text>
+        <button class="add-button">+ 添加步骤</button>
+      </view>
+
+      <view class="step-card">
+        <view class="step-left">
+          <text class="step-number">1</text>
+          <view class="step-upload">
+            <text class="step-eye">◒</text>
+            <text>上传图</text>
+          </view>
+        </view>
+        <view class="textarea-wrap">
+          <textarea
+            class="step-textarea"
+            placeholder="描述下做菜步骤，加入小贴士等让大家做得更好~"
+            placeholder-class="placeholder"
+            maxlength="100"
+          />
+          <text class="step-counter">0/100</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="publish-action">
+    <button class="publish-button">立即发布 <text>➤</text></button>
+  </view>
+
+  <view class="bottom-nav">
+    <view
+      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
+      wx:for="{{navs}}"
+      wx:key="name"
+      data-url="{{item.url}}"
+      bindtap="onNavTap"
+    >
+      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
+      <text wx:else class="nav-icon">{{item.icon}}</text>
+      <text class="nav-label">{{item.name}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,120 @@
+<view class="favorite-page">
+  <view class="favorite-header">
+    <view>
+      <view class="brand-title">
+        <text>金小明</text>
+        <text class="brand-highlight">的</text>
+        <text>食谱</text>
+      </view>
+      <text class="brand-subtitle">收藏你喜欢的每一道菜 💛</text>
+    </view>
+    <view class="menu-capsule">
+      <text class="menu-dots">•••</text>
+      <view class="menu-divider"></view>
+      <view class="menu-ring">
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="search-card">
+    <text class="search-icon">⌕</text>
+    <input class="search-input" placeholder="搜索菜谱、食材、作者" placeholder-class="search-placeholder" />
+    <button class="search-button">搜索</button>
+  </view>
+
+  <view class="tabs">
+    <view class="tab-item {{item === activeTab ? 'tab-active' : ''}}" wx:for="{{tabs}}" wx:key="*this">
+      <text>{{item}}</text>
+      <view wx:if="{{item === activeTab}}" class="tab-line"></view>
+    </view>
+  </view>
+
+  <view class="entry-row">
+    <view class="entry-card">
+      <view class="entry-icon entry-folder">□</view>
+      <view class="entry-copy">
+        <text class="entry-title">最近收藏</text>
+        <text class="entry-sub">看看你最近收藏了什么</text>
+      </view>
+      <text class="entry-arrow">›</text>
+    </view>
+    <view class="entry-card">
+      <view class="entry-icon entry-basket">▵</view>
+      <view class="entry-copy">
+        <text class="entry-title">我的收藏夹</text>
+        <text class="entry-sub">创建和管理收藏夹</text>
+      </view>
+      <text class="entry-arrow">›</text>
+    </view>
+  </view>
+
+  <view class="recipe-list">
+    <view class="favorite-recipe" wx:for="{{recipes}}" wx:key="title" bindtap="goDetail">
+      <image class="recipe-photo" src="{{item.image}}" mode="aspectFill" />
+      <view class="recipe-info">
+        <view>
+          <view class="recipe-title-row">
+            <text class="recipe-title">{{item.title}}</text>
+            <text class="recipe-tag {{item.tagColor}}">{{item.tag}}</text>
+          </view>
+          <text class="recipe-desc">{{item.desc}}</text>
+          <view class="author-row">
+            <view class="author-avatar">👨‍🍳</view>
+            <text class="author-name">金小明</text>
+            <text class="verified">✓</text>
+          </view>
+        </view>
+        <view class="recipe-meta">
+          <view class="meta-left">
+            <text class="heart">♡</text>
+            <text>{{item.likes}}</text>
+            <text class="clock">◷</text>
+            <text>{{item.time}}</text>
+          </view>
+          <text class="star">☆</text>
+        </view>
+        <text class="saved-time">{{item.savedAt}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="weekly-section">
+    <view class="weekly-header">
+      <view class="weekly-title-wrap">
+        <text class="fire">🔥</text>
+        <text class="weekly-title">本周常做</text>
+        <text class="weekly-sub">你本周收藏后常做的菜</text>
+      </view>
+      <view class="weekly-more">
+        <text>查看全部</text>
+        <text>›</text>
+      </view>
+    </view>
+    <scroll-view scroll-x enhanced show-scrollbar="{{false}}" class="weekly-scroll">
+      <view class="weekly-track">
+        <view class="weekly-item" wx:for="{{weekly}}" wx:key="title" bindtap="goDetail">
+          <view class="weekly-image-wrap">
+            <image class="weekly-image" src="{{item.image}}" mode="aspectFill" />
+            <text class="rank {{item.badge}}">{{item.rank}}</text>
+          </view>
+          <text class="weekly-name">{{item.title}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="bottom-nav">
+    <view
+      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
+      wx:for="{{navs}}"
+      wx:key="name"
+      data-url="{{item.url}}"
+      bindtap="onNavTap"
+    >
+      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
+      <text wx:else class="nav-icon">{{item.icon}}</text>
+      <text class="nav-label">{{item.name}}</text>
+    </view>
+  </view>
+</view>
