@@ -1,8 +1,0 @@
-<view class="tabbar-shell">
-  <image class="tabbar-image" src="{{tabSrc}}" mode="widthFix"></image>
-  <view class="tab-hit hit-home" data-key="home" bindtap="switchPage"></view>
-  <view class="tab-hit hit-category" data-key="category" bindtap="switchPage"></view>
-  <view class="tab-hit hit-center" data-key="center" bindtap="switchPage"></view>
-  <view class="tab-hit hit-favorite" data-key="favorite" bindtap="switchPage"></view>
-  <view class="tab-hit hit-profile" data-key="profile" bindtap="switchPage"></view>
-</view>
