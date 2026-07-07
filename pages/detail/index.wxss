@@ -730,3 +730,226 @@
   color: #ffffff;
   font-size: 9rpx;
 }
+
+/* Clear UI polish */
+.detail-page {
+  background: linear-gradient(180deg, #fff8f0 0%, #ffffff 48%, #fffaf1 100%);
+  color: #202124;
+}
+
+.detail-nav,
+.bottom-action {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8rpx 24rpx rgba(31, 27, 16, 0.06);
+}
+
+.nav-title {
+  color: #202124;
+  font-size: 25rpx;
+  font-weight: 900;
+}
+
+.nav-highlight {
+  color: #e6b800;
+}
+
+.menu-capsule,
+.hero-image-wrap,
+.creator-card,
+.content-card,
+.review-card,
+.reason-card,
+.related-image,
+.bottom-action {
+  border: 1rpx solid rgba(114, 92, 0, 0.09);
+}
+
+.hero-image-wrap,
+.creator-card,
+.content-card,
+.review-card {
+  box-shadow: 0 12rpx 30rpx rgba(31, 27, 16, 0.08);
+}
+
+.image-count {
+  font-size: 20rpx;
+  font-weight: 800;
+}
+
+.recipe-title {
+  color: #202124;
+  font-size: 40rpx;
+  font-weight: 900;
+  line-height: 52rpx;
+}
+
+.recipe-desc {
+  color: #4b5563;
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 36rpx;
+}
+
+.rating-chip {
+  height: 38rpx;
+  font-size: 21rpx;
+  font-weight: 800;
+}
+
+.quick-stats {
+  color: #5f6673;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.cost-left {
+  color: #202124;
+  font-size: 23rpx;
+  font-weight: 800;
+}
+
+.cost-value {
+  color: #e97100;
+  font-size: 26rpx;
+}
+
+.creator-name,
+.card-title {
+  color: #202124;
+  font-size: 26rpx;
+  font-weight: 900;
+}
+
+.creator-sub,
+.muted,
+.more-link,
+.nutrition-tip,
+.review-time {
+  color: #5f6673;
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
+.creator-note {
+  color: #4b5563;
+  font-size: 22rpx;
+  font-weight: 600;
+  line-height: 34rpx;
+}
+
+.tag-title {
+  color: #202124;
+  font-size: 22rpx;
+  font-weight: 900;
+}
+
+.tag {
+  font-size: 20rpx;
+  font-weight: 800;
+}
+
+.ingredient-name {
+  color: #202124;
+  font-size: 22rpx;
+  font-weight: 900;
+}
+
+.ingredient-desc {
+  color: #5f6673;
+  font-size: 18rpx;
+  font-weight: 700;
+}
+
+.nutrition-value {
+  color: #202124;
+  font-size: 23rpx;
+  font-weight: 900;
+}
+
+.nutrition-label {
+  color: #5f6673;
+  font-size: 19rpx;
+  font-weight: 700;
+}
+
+.reason-title {
+  color: #202124;
+  font-size: 22rpx;
+  font-weight: 900;
+}
+
+.reason-desc {
+  color: #5f6673;
+  font-size: 18rpx;
+  font-weight: 700;
+  line-height: 26rpx;
+}
+
+.step-index {
+  width: 32rpx;
+  height: 32rpx;
+  font-size: 17rpx;
+}
+
+.step-text {
+  color: #202124;
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 38rpx;
+}
+
+.related-name {
+  color: #202124;
+  font-size: 20rpx;
+  font-weight: 800;
+  line-height: 28rpx;
+}
+
+.write-review {
+  color: #4b5563;
+  font-size: 20rpx;
+  font-weight: 800;
+}
+
+.review-name {
+  color: #202124;
+  font-size: 22rpx;
+  font-weight: 900;
+}
+
+.level,
+.stars {
+  font-size: 18rpx;
+}
+
+.review-text {
+  color: #202124;
+  font-size: 22rpx;
+  font-weight: 600;
+  line-height: 34rpx;
+}
+
+.save-star {
+  font-size: 34rpx;
+}
+
+.save-label,
+.save-count {
+  color: #5f6673;
+  font-size: 18rpx;
+  font-weight: 700;
+}
+
+.menu-button,
+.cook-button {
+  height: 58rpx;
+  color: #202124;
+  font-size: 22rpx;
+  font-weight: 900;
+}
+
+.cook-button text {
+  width: 26rpx;
+  height: 26rpx;
+  font-size: 16rpx;
+}

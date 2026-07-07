@@ -42,7 +42,7 @@
       </button>
     </view>
     <view class="hero-image">
-      <text>img</text>
+      <image class="hero-photo" src="{{heroImage}}" mode="aspectFill" />
     </view>
     <view class="hero-dots">
       <view class="hero-dot hero-dot-active"></view>
@@ -89,7 +89,7 @@
     <view class="recipe-track">
       <view class="recipe-card" wx:for="{{recipes}}" wx:key="title" bindtap="goDetail">
         <view class="recipe-image">
-          <text>img</text>
+          <image class="recipe-photo" src="{{item.image}}" mode="aspectFill" />
           <text class="recipe-tag {{item.tagColor}}">{{item.tag}}</text>
         </view>
         <view class="recipe-body">

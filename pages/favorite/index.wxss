@@ -562,3 +562,191 @@
   font-weight: 800;
   box-shadow: 0 6rpx 14rpx rgba(0, 0, 0, 0.12);
 }
+
+/* Clear UI polish */
+.favorite-page {
+  padding: 24rpx 20rpx 160rpx;
+  background: linear-gradient(180deg, #fff8f0 0%, #ffffff 54%, #fffaf1 100%);
+  color: #202124;
+}
+
+.brand-title {
+  color: #202124;
+  font-size: 38rpx;
+  font-weight: 900;
+}
+
+.brand-highlight {
+  color: #e6b800;
+}
+
+.brand-subtitle {
+  color: #5f6673;
+  font-size: 23rpx;
+  font-weight: 600;
+}
+
+.menu-capsule,
+.search-card,
+.entry-card,
+.favorite-recipe,
+.weekly-image-wrap {
+  border: 1rpx solid rgba(114, 92, 0, 0.09);
+  box-shadow: 0 10rpx 28rpx rgba(31, 27, 16, 0.08);
+}
+
+.menu-capsule {
+  height: 48rpx;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.search-card {
+  height: 68rpx;
+}
+
+.search-input {
+  height: 68rpx;
+  color: #202124;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.search-placeholder {
+  color: #5f6673;
+  font-weight: 600;
+}
+
+.search-button {
+  top: 6rpx;
+  width: 116rpx;
+  height: 56rpx;
+  color: #202124;
+  font-size: 24rpx;
+  font-weight: 900;
+}
+
+.tabs {
+  color: #4b5563;
+  font-size: 25rpx;
+  font-weight: 700;
+}
+
+.tab-active {
+  color: #202124;
+  font-weight: 900;
+}
+
+.entry-card {
+  min-height: 110rpx;
+  border-radius: 18rpx;
+}
+
+.entry-title {
+  color: #202124;
+  font-size: 24rpx;
+  font-weight: 900;
+}
+
+.entry-sub {
+  color: #5f6673;
+  font-size: 20rpx;
+  font-weight: 600;
+}
+
+.favorite-recipe {
+  height: 210rpx;
+  border-radius: 18rpx;
+}
+
+.recipe-photo {
+  width: 210rpx;
+  height: 210rpx;
+}
+
+.recipe-title {
+  color: #202124;
+  font-size: 26rpx;
+  font-weight: 900;
+  line-height: 34rpx;
+}
+
+.recipe-tag {
+  padding: 4rpx 10rpx;
+  font-size: 18rpx;
+  font-weight: 800;
+  line-height: 24rpx;
+}
+
+.recipe-desc {
+  color: #4b5563;
+  font-size: 22rpx;
+  font-weight: 600;
+  line-height: 30rpx;
+}
+
+.author-avatar {
+  width: 32rpx;
+  height: 32rpx;
+  font-size: 18rpx;
+}
+
+.author-name,
+.recipe-meta,
+.saved-time,
+.weekly-sub,
+.weekly-more {
+  color: #5f6673;
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
+.weekly-title {
+  color: #202124;
+  font-size: 28rpx;
+  font-weight: 900;
+}
+
+.weekly-name {
+  color: #202124;
+  font-size: 21rpx;
+  font-weight: 700;
+  line-height: 28rpx;
+}
+
+.rank {
+  width: 28rpx;
+  height: 28rpx;
+  font-size: 17rpx;
+}
+
+.bottom-nav {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 -8rpx 24rpx rgba(31, 27, 16, 0.06);
+}
+
+.nav-item {
+  color: #6b7280;
+}
+
+.nav-active {
+  color: #202124;
+}
+
+.nav-label {
+  color: inherit;
+  font-size: 21rpx;
+  font-weight: 700;
+}
+
+.nav-icon {
+  font-size: 31rpx;
+}
+
+.center-button {
+  width: 76rpx;
+  height: 76rpx;
+  color: #202124;
+  font-size: 40rpx;
+  font-weight: 900;
+  box-shadow: 0 10rpx 22rpx rgba(255, 209, 0, 0.32);
+}

@@ -86,7 +86,7 @@
   font-size: 34rpx;
   font-weight: 900;
   line-height: 46rpx;
-  letter-spacing: -1rpx;
+  letter-spacing: 0;
 }
 
 .brand-highlight {
@@ -542,4 +542,219 @@
   border-radius: 999rpx;
   background: #000000;
   transform: translateX(-50%);
+}
+
+/* Clear UI polish */
+.category-page {
+  background: linear-gradient(180deg, #fff8f0 0%, #ffffff 54%, #fffaf1 100%);
+  color: #202124;
+}
+
+.status-time {
+  color: #202124;
+  font-size: 24rpx;
+}
+
+.brand-title {
+  color: #202124;
+  font-size: 40rpx;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.brand-highlight {
+  color: #e6b800;
+}
+
+.brand-subtitle {
+  color: #5f6673;
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 34rpx;
+}
+
+.menu-capsule,
+.search-card,
+.hot-card,
+.ingredient-card,
+.cuisine-card {
+  border: 1rpx solid rgba(114, 92, 0, 0.09);
+  box-shadow: 0 10rpx 26rpx rgba(31, 27, 16, 0.08);
+}
+
+.menu-capsule {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.search-card {
+  height: 68rpx;
+}
+
+.search-icon {
+  top: 16rpx;
+  color: #6b7280;
+}
+
+.search-input {
+  height: 68rpx;
+  color: #202124;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.search-placeholder {
+  color: #5f6673;
+  font-weight: 600;
+}
+
+.search-button {
+  top: 6rpx;
+  width: 122rpx;
+  height: 56rpx;
+  color: #202124;
+  font-size: 24rpx;
+  font-weight: 900;
+}
+
+.section-title {
+  color: #202124;
+  font-size: 31rpx;
+  font-weight: 900;
+}
+
+.count-chip {
+  color: #d96d1c;
+  font-size: 19rpx;
+  font-weight: 800;
+}
+
+.category-icon {
+  width: 62rpx;
+  height: 62rpx;
+  font-size: 30rpx;
+  box-shadow: 0 8rpx 18rpx rgba(31, 27, 16, 0.08);
+}
+
+.category-name {
+  color: #202124;
+  font-size: 21rpx;
+  font-weight: 800;
+  line-height: 28rpx;
+}
+
+.hot-card {
+  height: 156rpx;
+  border-radius: 24rpx;
+}
+
+.hot-copy {
+  padding-top: 44rpx;
+}
+
+.hot-title-text {
+  color: #202124;
+  font-size: 24rpx;
+  font-weight: 900;
+  line-height: 32rpx;
+}
+
+.hot-desc {
+  color: #5f6673;
+  font-size: 20rpx;
+  font-weight: 600;
+  line-height: 28rpx;
+}
+
+.hot-image {
+  width: 142rpx;
+  height: 156rpx;
+}
+
+.ingredient-card {
+  min-height: 112rpx;
+  border-radius: 16rpx;
+}
+
+.ingredient-name {
+  color: #202124;
+  font-size: 19rpx;
+  font-weight: 800;
+  line-height: 26rpx;
+}
+
+.more-link {
+  color: #5f6673;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.cuisine-card {
+  width: 154rpx;
+  border-radius: 18rpx;
+}
+
+.cuisine-image {
+  width: 154rpx;
+  height: 116rpx;
+}
+
+.cuisine-name {
+  color: #202124;
+  font-size: 23rpx;
+  font-weight: 900;
+  line-height: 31rpx;
+}
+
+.cuisine-desc {
+  color: #5f6673;
+  font-size: 18rpx;
+  font-weight: 600;
+  line-height: 25rpx;
+}
+
+.bottom-nav {
+  height: 122rpx;
+  padding: 14rpx 44rpx 28rpx;
+  border-top-color: rgba(114, 92, 0, 0.1);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 -8rpx 24rpx rgba(31, 27, 16, 0.06);
+}
+
+.nav-item {
+  width: 76rpx;
+  color: #6b7280;
+}
+
+.nav-active {
+  color: #202124;
+}
+
+.nav-active .nav-icon {
+  color: #e6b800;
+}
+
+.nav-icon {
+  height: 34rpx;
+  font-size: 32rpx;
+  line-height: 34rpx;
+}
+
+.nav-label {
+  color: inherit;
+  font-size: 21rpx;
+  font-weight: 700;
+  line-height: 28rpx;
+}
+
+.nav-center {
+  top: -36rpx;
+}
+
+.center-button {
+  width: 76rpx;
+  height: 76rpx;
+  border-color: #ffffff;
+  color: #202124;
+  font-size: 40rpx;
+  box-shadow: 0 10rpx 22rpx rgba(255, 209, 0, 0.32);
 }

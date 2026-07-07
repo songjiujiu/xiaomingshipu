@@ -21,7 +21,7 @@
         <text class="brand-highlight">的</text>
         <text>食谱</text>
       </view>
-      <text class="brand-subtitle">分享你的拿手好菜 💛</text>
+      <text class="brand-subtitle">记录每一餐的温度与灵感</text>
     </view>
     <view class="menu-capsule">
       <text class="menu-dots">•••</text>
@@ -33,35 +33,78 @@
   </view>
 
   <view class="content">
-    <view class="cover-card">
-      <image class="cover-image" src="{{coverImage}}" mode="aspectFill" />
-      <view class="cover-mask">
-        <view class="upload-bubble">
-          <text class="camera">▣</text>
-          <text class="upload-text">上传封面图</text>
+    <view class="profile-card">
+      <image class="profile-cover" src="{{coverImage}}" mode="aspectFill" />
+      <view class="profile-shade"></view>
+      <view class="profile-main">
+        <view class="avatar-large">金</view>
+        <view class="profile-copy">
+          <text class="profile-name">金小明</text>
+          <text class="profile-desc">家常菜记录者 · 已连续下厨 21 天</text>
         </view>
-        <text class="cover-tip">建议 1:1 比例，清晰美观</text>
+        <button class="profile-button">编辑资料</button>
+      </view>
+      <view class="profile-badges">
+        <text class="badge">家庭主厨</text>
+        <text class="badge">清淡少油</text>
+        <text class="badge">快手晚餐</text>
       </view>
     </view>
 
-    <view class="draft-card">
-      <view class="field-row">
-        <text class="field-label">菜谱名称</text>
-        <text class="required">*</text>
+    <view class="stats-grid">
+      <view class="stat-item">
+        <text class="stat-value">128</text>
+        <text class="stat-label">发布食谱</text>
       </view>
-      <view class="input-line">
-        <text class="input-placeholder">给食谱起个让人想点开的名字吧</text>
-        <text class="counter">0/30</text>
+      <view class="stat-item">
+        <text class="stat-value">2.4k</text>
+        <text class="stat-label">被收藏</text>
+      </view>
+      <view class="stat-item">
+        <text class="stat-value">36</text>
+        <text class="stat-label">收藏夹</text>
       </view>
     </view>
 
-    <view class="profile-strip">
-      <view class="profile-avatar">👨‍🍳</view>
-      <view class="profile-copy">
-        <text class="profile-name">金小明</text>
-        <text class="profile-desc">今天也认真记录一餐</text>
+    <view class="menu-panel">
+      <view class="panel-title-row">
+        <text class="panel-title">常用功能</text>
+        <text class="panel-more">全部 ›</text>
       </view>
-      <button class="profile-button">编辑资料</button>
+      <view class="action-list">
+        <view class="action-item">
+          <view class="action-icon icon-yellow">＋</view>
+          <view class="action-copy">
+            <text class="action-title">发布新食谱</text>
+            <text class="action-desc">上传图片、步骤和小贴士</text>
+          </view>
+          <text class="action-arrow">›</text>
+        </view>
+        <view class="action-item">
+          <view class="action-icon icon-green">✓</view>
+          <view class="action-copy">
+            <text class="action-title">本周菜单</text>
+            <text class="action-desc">查看已安排的三餐计划</text>
+          </view>
+          <text class="action-arrow">›</text>
+        </view>
+        <view class="action-item">
+          <view class="action-icon icon-orange">☆</view>
+          <view class="action-copy">
+            <text class="action-title">我的收藏</text>
+            <text class="action-desc">快速找到喜欢的家常菜</text>
+          </view>
+          <text class="action-arrow">›</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="achievement-card">
+      <view>
+        <text class="achievement-title">今日小目标</text>
+        <text class="achievement-desc">补全 1 道拿手菜步骤，让菜谱更好复刻。</text>
+      </view>
+      <button class="achievement-button">去完成</button>
     </view>
   </view>
 
