@@ -1,7 +1,5 @@
 <view class="page-shell">
   <view class="status-bar">
-    <text class="status-time">9:41</text>
-    <view class="status-dot"></view>
   </view>
 
   <view class="header">
@@ -12,12 +10,6 @@
         <text class="brand-text">的 食谱</text>
       </view>
       <text class="brand-subtitle">用心做好每一餐 💛</text>
-    </view>
-    <view class="menu-capsule">
-      <text class="menu-dots">•••</text>
-      <view class="menu-ring">
-        <view class="menu-dot"></view>
-      </view>
     </view>
   </view>
 
