@@ -57,25 +57,7 @@ Page({
       { name: "粤菜", desc: "鲜香清淡 🦐", image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCjQIq1DA6wqscN0kXGBurr_l9hrXDmKz0xDobFfZilcyvm618euW9KYHqjkaqrdQZ_DyiPjBcWQMqBCQhRqNgvrvNGBPobcM3PrI_jkfqRmTREXnCjgsFYUt1C5hVECoQtprQCqsK_VUoVfmj2-xhc_m1HWpZ0QBcB9Fd5GwJFDLHMYlQb2wz4TGoS4LdtIhjBkU4AjsY6AsU8x8fQN4VW_nudABgqXogo4NdzE97kEl4ZZuULgozJ0ghBmJI2yUczzNGb5OksNZU_" },
       { name: "湘菜", desc: "香辣下饭 🌶", image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA_las6Qm5bDKNQ3mqhF9mnIPb2JHm0bOCPXCy_QR5zD4efaw9QkriwKZUpoY8uD42_h3hBPSvxtkr3BDKQLqjy-9vc0bDSHEyJe2_yw4q1A3pOCHUcWz9ry3CuUOipIKQhImLw7-FO48RhVnIM5wFReMqw9zK-v-GZuGcTnF3G06fEjPZLB5Twy8eoBXEH61PIOE_Ommpq1epKF0JakkuTTYtJWQeEhPfzcfrvImuJWVGeI0njzVktQIrf2P4Mj_QT9SaXMcxPB56Y" },
       { name: "鲁菜", desc: "咸鲜醇厚 🔥", image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKbFbuT4PGw54-z05qS9bqIel-b_2dKqgHQgEJpnuDf6ntCcn8ldDJkJrbNhiYnSu7g5r_yQSXaIDbRskHAS3N2zEjJEzNvpesKPc2QmMuVo4AIK9k-pcE2fhHWdnESifJeMt62REFqqojec2HdwfWzwYbEDKWrh5mpclTsK_M9AhEFjgd15hncaonWTJsUDk5lBVfpJyJg4V9igNoRoTYy-ot_4MoBZh5jotB-ICT02KEG-x1EjBSfLPotaK6TydLASKuzQ79p5dv" }
-    ],
-    navs: [
-      { name: "首页", icon: "⌂", url: "/pages/index/index" },
-      { name: "分类", icon: "▦", active: true, url: "/pages/category/index" },
-      { name: "今天吃啥", icon: "🎁", center: true, url: "/pages/lottery/index" },
-      { name: "收藏", icon: "▱", url: "/pages/favorite/index" },
-      { name: "我的", icon: "♙", url: "/pages/mine/index" }
     ]
-  },
-
-  onNavTap(event) {
-    const url = event.currentTarget.dataset.url
-    if (!url) return
-
-    const pages = getCurrentPages()
-    const current = pages.length ? `/${pages[pages.length - 1].route}` : ""
-    if (current === url) return
-
-    wx.redirectTo({ url })
   },
 
   goDetail() {

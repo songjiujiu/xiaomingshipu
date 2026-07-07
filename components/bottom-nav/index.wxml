@@ -1,0 +1,18 @@
+<view class="bottom-nav-shell">
+  <view
+    class="nav-item {{item.key === active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
+    wx:for="{{items}}"
+    wx:key="key"
+    data-url="{{item.url}}"
+    bindtap="onTap"
+  >
+    <view wx:if="{{item.center}}" class="center-button">
+      <text class="center-plus">{{item.icon}}</text>
+    </view>
+    <view wx:else class="nav-icon-box">
+      <text class="nav-icon">{{item.icon}}</text>
+    </view>
+    <text class="nav-label">{{item.label}}</text>
+  </view>
+</view>
+<view class="safe-indicator"></view>

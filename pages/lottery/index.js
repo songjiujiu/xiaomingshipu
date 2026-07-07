@@ -94,29 +94,11 @@ Page({
         time: "60分钟",
         image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDgQhqIsrtZa6_SXfZ_7CMdZPaI67wKTA1JgR7Q5v4B5Qge8vOhOP18OMYWmYVdoIrTQlE89khdX8pB-rkVq3HyiKHUZO2P1YZqoJJ7xe3L5mj-fHzWvP1NjBvPomUV_7N8ar7gv1JBtlKbLTuL1tWVb382pOdqm_YJhVyetLBDCCu5vk6ol4c2Q0bHf5QfrgH_AzE53vmK_zZ0rSRo3NVoyX4z-KBZChjECqqybs54KUZ-Rfm6-3p9BKgSyPxvRXHz6ZBkA-2P_sD4"
       }
-    ],
-    navs: [
-      { name: "首页", icon: "⌂", url: "/pages/index/index" },
-      { name: "分类", icon: "≡", url: "/pages/category/index" },
-      { name: "今天吃啥", icon: "🎁", center: true, active: true, url: "/pages/lottery/index" },
-      { name: "收藏", icon: "▱", url: "/pages/favorite/index" },
-      { name: "我的", icon: "♙", url: "/pages/mine/index" }
     ]
   },
 
   onUnload() {
     if (this._timer) clearInterval(this._timer)
-  },
-
-  onNavTap(event) {
-    const url = event.currentTarget.dataset.url
-    if (!url) return
-
-    const pages = getCurrentPages()
-    const current = pages.length ? `/${pages[pages.length - 1].route}` : ""
-    if (current === url) return
-
-    wx.redirectTo({ url })
   },
 
   onCellTap(event) {

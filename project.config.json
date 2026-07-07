@@ -1,7 +1,20 @@
 {
   "description": "金小明的食谱小程序首页",
   "packOptions": {
-    "ignore": []
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "ui-reference"
+      },
+      {
+        "type": "folder",
+        "value": ".git"
+      },
+      {
+        "type": "folder",
+        "value": ".agents"
+      }
+    ]
   },
   "setting": {
     "urlCheck": false,

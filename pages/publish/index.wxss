@@ -1,6 +1,6 @@
 .publish-page {
   min-height: 100vh;
-  padding-bottom: 202rpx;
+  padding-bottom: 246rpx;
   background: #fff8f0;
   color: #333333;
 }
@@ -86,7 +86,7 @@
 }
 
 .form-scroll {
-  height: calc(100vh - 40rpx - 88rpx - 202rpx);
+  height: calc(100vh - 40rpx - 88rpx - 246rpx);
 }
 
 .form-content {
@@ -363,9 +363,9 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 82rpx;
+  bottom: 136rpx;
   z-index: 25;
-  padding: 0 20rpx;
+  padding: 10rpx 20rpx 18rpx;
   background: #fff8f0;
 }
 
@@ -657,4 +657,192 @@
   color: #202124;
   font-size: 40rpx;
   box-shadow: 0 10rpx 22rpx rgba(255, 209, 0, 0.32);
+}
+
+/* Readability boost for real devices */
+.publish-page {
+  padding-bottom: 272rpx;
+}
+
+.status-bar {
+  height: 56rpx;
+  padding: 0 36rpx;
+  font-size: 26rpx;
+}
+
+.top-bar {
+  height: 104rpx;
+}
+
+.back-button,
+.more-button {
+  width: 58rpx;
+  font-size: 46rpx;
+}
+
+.page-title {
+  font-size: 38rpx;
+  line-height: 50rpx;
+}
+
+.form-scroll {
+  height: calc(100vh - 56rpx - 104rpx - 272rpx);
+}
+
+.form-content {
+  padding: 24rpx 26rpx 44rpx;
+}
+
+.cover-uploader {
+  height: 600rpx;
+  border-radius: 30rpx;
+}
+
+.eye-bubble {
+  width: 108rpx;
+  height: 108rpx;
+  font-size: 56rpx;
+}
+
+.cover-title {
+  margin-top: 24rpx;
+  font-size: 34rpx;
+  line-height: 44rpx;
+}
+
+.cover-tip {
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.form-section {
+  margin-top: 40rpx;
+}
+
+.label {
+  font-size: 32rpx;
+  line-height: 44rpx;
+}
+
+.input-wrap {
+  height: 84rpx;
+  margin-top: 18rpx;
+  border-radius: 20rpx;
+}
+
+.text-input {
+  height: 84rpx;
+  padding: 0 24rpx;
+  font-size: 30rpx;
+}
+
+.counter,
+.step-counter {
+  font-size: 25rpx;
+}
+
+.select-grid {
+  margin-top: 20rpx;
+  grid-template-columns: 1fr;
+  gap: 16rpx;
+}
+
+.select-box {
+  height: 78rpx;
+  padding: 0 22rpx;
+  border-radius: 18rpx;
+}
+
+.select-icon {
+  font-size: 30rpx;
+}
+
+.select-placeholder,
+.select-arrow {
+  font-size: 29rpx;
+}
+
+.section-head {
+  margin-top: 44rpx;
+}
+
+.add-button {
+  height: 58rpx;
+  padding: 0 24rpx;
+  font-size: 28rpx;
+}
+
+.ingredient-list {
+  margin-top: 22rpx;
+}
+
+.ingredient-row {
+  margin-bottom: 18rpx;
+  grid-template-columns: 1fr 1fr 42rpx;
+  gap: 14rpx;
+}
+
+.ingredient-input {
+  height: 76rpx;
+  padding: 0 22rpx;
+  font-size: 29rpx;
+  border-radius: 18rpx;
+}
+
+.remove-button {
+  width: 42rpx;
+  height: 42rpx;
+  font-size: 32rpx;
+}
+
+.expand-more {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+}
+
+.steps-head {
+  margin-top: 48rpx;
+}
+
+.step-card {
+  margin-top: 24rpx;
+  padding: 24rpx;
+  border-radius: 30rpx;
+}
+
+.step-left {
+  width: 116rpx;
+}
+
+.step-number {
+  width: 48rpx;
+  height: 48rpx;
+  font-size: 26rpx;
+}
+
+.step-upload {
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 23rpx;
+}
+
+.step-eye {
+  font-size: 36rpx;
+}
+
+.step-textarea {
+  min-height: 170rpx;
+  padding: 20rpx 20rpx 38rpx;
+  font-size: 29rpx;
+  line-height: 44rpx;
+}
+
+.publish-action {
+  bottom: 152rpx;
+  padding: 12rpx 26rpx 20rpx;
+}
+
+.publish-button {
+  height: 86rpx;
+  font-size: 34rpx;
 }

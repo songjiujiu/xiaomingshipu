@@ -953,3 +953,273 @@
   height: 26rpx;
   font-size: 16rpx;
 }
+
+/* Readability boost for real devices */
+.detail-page {
+  padding-bottom: 150rpx;
+}
+
+.detail-nav {
+  height: 78rpx;
+  padding: 0 24rpx;
+}
+
+.back-icon {
+  font-size: 44rpx;
+}
+
+.nav-title {
+  font-size: 32rpx;
+  line-height: 42rpx;
+}
+
+.hero-section {
+  padding: 18rpx 24rpx 0;
+}
+
+.hero-image-wrap {
+  height: 386rpx;
+  border-radius: 30rpx;
+}
+
+.image-count {
+  font-size: 25rpx;
+}
+
+.recipe-info {
+  padding: 30rpx 28rpx 22rpx;
+}
+
+.recipe-title {
+  font-size: 48rpx;
+  line-height: 62rpx;
+}
+
+.recipe-desc {
+  margin-top: 14rpx;
+  font-size: 30rpx;
+  line-height: 44rpx;
+}
+
+.rating-row,
+.quick-stats {
+  margin-top: 24rpx;
+}
+
+.rating-chip {
+  height: 46rpx;
+  padding: 0 16rpx;
+  font-size: 26rpx;
+}
+
+.quick-stats {
+  font-size: 27rpx;
+  line-height: 38rpx;
+}
+
+.cost-card {
+  padding: 20rpx;
+  border-radius: 22rpx;
+}
+
+.cost-left {
+  font-size: 28rpx;
+}
+
+.cost-value {
+  font-size: 32rpx;
+}
+
+.creator-card,
+.content-card,
+.review-card,
+.reason-section,
+.related-section,
+.review-section {
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+
+.creator-card,
+.content-card,
+.review-card {
+  padding: 24rpx;
+  border-radius: 26rpx;
+}
+
+.avatar {
+  width: 62rpx;
+  height: 62rpx;
+}
+
+.creator-name,
+.card-title {
+  font-size: 32rpx;
+  line-height: 42rpx;
+}
+
+.creator-sub,
+.muted,
+.more-link,
+.nutrition-tip,
+.review-time {
+  font-size: 25rpx;
+  line-height: 34rpx;
+}
+
+.creator-note {
+  font-size: 28rpx;
+  line-height: 42rpx;
+}
+
+.tag-section {
+  padding: 0 28rpx;
+  gap: 12rpx;
+}
+
+.tag-title,
+.tag {
+  font-size: 26rpx;
+  line-height: 34rpx;
+}
+
+.ingredient-item {
+  width: 108rpx;
+  margin-right: 20rpx;
+}
+
+.ingredient-image-wrap {
+  width: 86rpx;
+  height: 86rpx;
+}
+
+.ingredient-name {
+  font-size: 27rpx;
+  line-height: 36rpx;
+}
+
+.ingredient-desc {
+  font-size: 23rpx;
+  line-height: 30rpx;
+}
+
+.nutrition-grid {
+  row-gap: 24rpx;
+}
+
+.nutrition-icon {
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.nutrition-value {
+  font-size: 29rpx;
+}
+
+.nutrition-label {
+  font-size: 24rpx;
+}
+
+.reason-grid {
+  grid-template-columns: 1fr;
+  gap: 18rpx;
+}
+
+.reason-card {
+  padding: 22rpx;
+}
+
+.reason-title {
+  font-size: 28rpx;
+  line-height: 38rpx;
+}
+
+.reason-desc {
+  font-size: 25rpx;
+  line-height: 36rpx;
+}
+
+.step-item {
+  margin-top: 24rpx;
+}
+
+.step-index {
+  width: 42rpx;
+  height: 42rpx;
+  font-size: 23rpx;
+}
+
+.step-text {
+  font-size: 30rpx;
+  line-height: 48rpx;
+}
+
+.related-item {
+  width: 142rpx;
+  margin-right: 22rpx;
+}
+
+.related-image {
+  width: 142rpx;
+  height: 142rpx;
+}
+
+.related-name {
+  width: 142rpx;
+  font-size: 26rpx;
+  line-height: 36rpx;
+}
+
+.write-review {
+  font-size: 25rpx;
+}
+
+.review-avatar {
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.review-name {
+  font-size: 28rpx;
+}
+
+.level,
+.stars {
+  font-size: 23rpx;
+}
+
+.review-text {
+  font-size: 28rpx;
+  line-height: 42rpx;
+}
+
+.review-photo {
+  width: 92rpx;
+  height: 92rpx;
+}
+
+.bottom-action {
+  min-height: 102rpx;
+  padding: 16rpx 24rpx 22rpx;
+}
+
+.save-block {
+  width: 72rpx;
+}
+
+.save-star {
+  font-size: 42rpx;
+  line-height: 42rpx;
+}
+
+.save-label,
+.save-count {
+  font-size: 22rpx;
+  line-height: 28rpx;
+}
+
+.menu-button,
+.cook-button {
+  height: 68rpx;
+  font-size: 28rpx;
+}

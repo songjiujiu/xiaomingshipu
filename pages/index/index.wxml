@@ -68,7 +68,7 @@
   </view>
 
   <view class="quick-actions">
-    <view class="quick-card" wx:for="{{actions}}" wx:key="title">
+    <view class="quick-card" wx:for="{{actions}}" wx:key="title" data-url="{{item.url}}" bindtap="onActionTap">
       <view class="quick-icon {{item.color}}">{{item.icon}}</view>
       <view class="quick-copy">
         <text class="quick-title">{{item.title}}</text>
@@ -119,19 +119,5 @@
     </view>
   </view>
 
-  <view class="bottom-nav">
-    <view class="nav-curve"></view>
-    <view
-      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
-      wx:for="{{navs}}"
-      wx:key="name"
-      data-url="{{item.url}}"
-      bindtap="onNavTap"
-    >
-      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
-      <text wx:else class="nav-icon">{{item.icon}}</text>
-      <text class="nav-label">{{item.name}}</text>
-    </view>
-  </view>
-  <view class="home-indicator"></view>
+  <bottom-nav active="home" />
 </view>

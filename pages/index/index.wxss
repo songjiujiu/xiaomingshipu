@@ -1,6 +1,6 @@
 .page-shell {
   min-height: 100vh;
-  padding-bottom: 174rpx;
+  padding-bottom: 190rpx;
   overflow-x: hidden;
   background: #ffffff;
 }
@@ -875,4 +875,199 @@
   color: inherit;
   font-size: 22rpx;
   font-weight: 700;
+}
+
+/* Readability boost for real devices */
+.page-shell {
+  padding-bottom: 212rpx;
+}
+
+.header,
+.search-section,
+.category-row,
+.quick-actions,
+.section-header,
+.record-card {
+  margin-left: 28rpx;
+  margin-right: 28rpx;
+}
+
+.header {
+  padding-top: 22rpx;
+}
+
+.brand-text {
+  font-size: 56rpx;
+  line-height: 68rpx;
+}
+
+.brand-subtitle {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.search-section {
+  padding: 0;
+  margin-top: 42rpx;
+}
+
+.search-bar {
+  height: 78rpx;
+}
+
+.search-input {
+  height: 78rpx;
+  font-size: 31rpx;
+}
+
+.search-button {
+  width: 152rpx;
+  height: 66rpx;
+  font-size: 30rpx;
+}
+
+.hero-card {
+  height: 470rpx;
+  margin: 40rpx 28rpx 0;
+  border-radius: 36rpx;
+}
+
+.hero-copy {
+  width: 56%;
+  padding: 48rpx 0 48rpx 36rpx;
+}
+
+.hero-image {
+  width: 44%;
+}
+
+.hero-kicker {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.hero-title {
+  font-size: 58rpx;
+  line-height: 68rpx;
+}
+
+.hero-desc {
+  width: 330rpx;
+  font-size: 29rpx;
+  line-height: 42rpx;
+}
+
+.hero-button,
+.record-button {
+  height: 66rpx;
+  font-size: 29rpx;
+}
+
+.category-row {
+  margin-top: 50rpx;
+}
+
+.category-icon {
+  width: 98rpx;
+  height: 98rpx;
+  font-size: 44rpx;
+}
+
+.category-name {
+  margin-top: 18rpx;
+  font-size: 28rpx;
+  line-height: 38rpx;
+}
+
+.quick-actions {
+  margin-top: 48rpx;
+  gap: 18rpx;
+}
+
+.quick-card {
+  flex: 1;
+  width: auto;
+  height: 104rpx;
+  padding: 18rpx 14rpx;
+  border-radius: 22rpx;
+}
+
+.quick-icon {
+  width: 56rpx;
+  height: 56rpx;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+
+.quick-title {
+  font-size: 25rpx;
+  line-height: 34rpx;
+}
+
+.quick-sub {
+  font-size: 22rpx;
+  line-height: 30rpx;
+}
+
+.section-header {
+  margin-top: 58rpx;
+}
+
+.section-title {
+  font-size: 46rpx;
+  line-height: 60rpx;
+}
+
+.section-more {
+  font-size: 28rpx;
+}
+
+.recipe-track {
+  padding: 0 28rpx 24rpx;
+}
+
+.recipe-card {
+  width: 360rpx;
+  margin-right: 30rpx;
+  border-radius: 28rpx;
+}
+
+.recipe-image {
+  height: 210rpx;
+}
+
+.recipe-body {
+  padding: 22rpx 20rpx 24rpx;
+}
+
+.recipe-title {
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+
+.recipe-meta {
+  margin-top: 24rpx;
+  font-size: 26rpx;
+  line-height: 34rpx;
+}
+
+.recipe-tag {
+  font-size: 22rpx;
+  line-height: 30rpx;
+}
+
+.record-card {
+  min-height: 286rpx;
+  padding: 54rpx 36rpx;
+  border-radius: 36rpx;
+}
+
+.record-title {
+  font-size: 44rpx;
+  line-height: 58rpx;
+}
+
+.record-desc {
+  font-size: 28rpx;
+  line-height: 40rpx;
 }

@@ -108,17 +108,5 @@
     </view>
   </view>
 
-  <view class="bottom-nav">
-    <view
-      class="nav-item {{item.active ? 'nav-active' : ''}} {{item.center ? 'nav-center' : ''}}"
-      wx:for="{{navs}}"
-      wx:key="name"
-      data-url="{{item.url}}"
-      bindtap="onNavTap"
-    >
-      <view wx:if="{{item.center}}" class="center-button">{{item.icon}}</view>
-      <text wx:else class="nav-icon">{{item.icon}}</text>
-      <text class="nav-label">{{item.name}}</text>
-    </view>
-  </view>
+  <bottom-nav active="mine" />
 </view>

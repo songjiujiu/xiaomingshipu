@@ -1,6 +1,6 @@
 .category-page {
   min-height: 100vh;
-  padding-bottom: 132rpx;
+  padding-bottom: 190rpx;
   background: #fff8f0;
   color: #333333;
 }
@@ -757,4 +757,153 @@
   color: #202124;
   font-size: 40rpx;
   box-shadow: 0 10rpx 22rpx rgba(255, 209, 0, 0.32);
+}
+
+/* Readability boost for real devices */
+.category-page {
+  padding-bottom: 212rpx;
+}
+
+.header,
+.search-wrap,
+.category-section,
+.hot-section,
+.ingredient-section,
+.cuisine-section {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.brand-title {
+  font-size: 46rpx;
+  line-height: 60rpx;
+}
+
+.brand-subtitle {
+  font-size: 29rpx;
+  line-height: 40rpx;
+}
+
+.search-card {
+  height: 78rpx;
+}
+
+.search-input {
+  height: 78rpx;
+  font-size: 30rpx;
+}
+
+.search-button {
+  height: 66rpx;
+  width: 144rpx;
+  font-size: 28rpx;
+}
+
+.category-section {
+  margin-top: 44rpx;
+}
+
+.section-title {
+  font-size: 38rpx;
+  line-height: 50rpx;
+}
+
+.count-chip {
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+
+.category-grid {
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 38rpx;
+  margin-top: 34rpx;
+}
+
+.category-icon {
+  width: 86rpx;
+  height: 86rpx;
+  font-size: 42rpx;
+}
+
+.category-name {
+  margin-top: 14rpx;
+  font-size: 27rpx;
+  line-height: 36rpx;
+}
+
+.hot-section,
+.ingredient-section,
+.cuisine-section {
+  margin-top: 54rpx;
+}
+
+.hot-grid {
+  gap: 24rpx;
+}
+
+.hot-card {
+  height: 184rpx;
+  border-radius: 28rpx;
+}
+
+.hot-copy {
+  padding: 52rpx 0 0 24rpx;
+}
+
+.hot-title-text {
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+
+.hot-desc {
+  font-size: 25rpx;
+  line-height: 34rpx;
+}
+
+.ingredient-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18rpx;
+}
+
+.ingredient-card {
+  min-height: 134rpx;
+  padding: 14rpx 8rpx;
+}
+
+.ingredient-image {
+  width: 70rpx;
+  height: 62rpx;
+}
+
+.ingredient-name {
+  font-size: 25rpx;
+  line-height: 34rpx;
+}
+
+.more-link {
+  font-size: 28rpx;
+}
+
+.cuisine-card {
+  width: 188rpx;
+  margin-right: 24rpx;
+}
+
+.cuisine-image {
+  width: 188rpx;
+  height: 138rpx;
+}
+
+.cuisine-copy {
+  padding: 14rpx 12rpx 16rpx;
+}
+
+.cuisine-name {
+  font-size: 29rpx;
+  line-height: 38rpx;
+}
+
+.cuisine-desc {
+  font-size: 24rpx;
+  line-height: 32rpx;
 }

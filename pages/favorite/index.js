@@ -73,25 +73,7 @@ Page({
         title: "清炒时蔬",
         image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB9UppZwQ_O0KNHCvZ9A9xqyguhEmQBnytjcZhUu7pD2Ju2lwmsjIDl6amscdeWdlNBiKrbiAvJI4U0aQO-bDJ-e2GSuf468AoovscGy7Q0XxQhjf4AiODwboiIf06KmvQYcCPn4K0Ul6FePOVYu44Ntn4-o2kJ--o740mxGSvgevZjygz_RYYHTgjm2F7uaHv-dcjKK-jVi-kHrgtfTyrbgtfTVfE2LRt20L2Xl4g1Y51OablBlO4UtM-lxULyM7p7oVW-MbrK1v99"
       }
-    ],
-    navs: [
-      { name: "首页", icon: "⌂", url: "/pages/index/index" },
-      { name: "分类", icon: "≡", url: "/pages/category/index" },
-      { name: "今天吃啥", icon: "🎁", center: true, url: "/pages/lottery/index" },
-      { name: "收藏", icon: "▱", active: true, url: "/pages/favorite/index" },
-      { name: "我的", icon: "♙", url: "/pages/mine/index" }
     ]
-  },
-
-  onNavTap(event) {
-    const url = event.currentTarget.dataset.url
-    if (!url) return
-
-    const pages = getCurrentPages()
-    const current = pages.length ? `/${pages[pages.length - 1].route}` : ""
-    if (current === url) return
-
-    wx.redirectTo({ url })
   },
 
   goDetail() {

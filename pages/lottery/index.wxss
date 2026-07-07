@@ -1,6 +1,6 @@
 .lottery-page {
   min-height: 100vh;
-  padding-bottom: 120rpx;
+  padding-bottom: 190rpx;
   background: #fffef6;
   color: #333333;
 }
@@ -652,4 +652,155 @@
   font-size: 40rpx;
   font-weight: 900;
   box-shadow: 0 10rpx 22rpx rgba(255, 209, 0, 0.32);
+}
+
+/* Readability boost for real devices */
+.lottery-page {
+  padding-bottom: 212rpx;
+}
+
+.header {
+  padding: 30rpx 30rpx 14rpx;
+}
+
+.brand-title {
+  font-size: 48rpx;
+  line-height: 62rpx;
+}
+
+.brand-subtitle {
+  font-size: 29rpx;
+  line-height: 42rpx;
+}
+
+.food-tab {
+  height: 66rpx;
+  padding: 0 28rpx;
+  font-size: 29rpx;
+}
+
+.lottery-box {
+  margin: 30rpx 30rpx 0;
+  padding: 20rpx;
+  gap: 16rpx;
+  border-radius: 36rpx;
+}
+
+.lottery-cell {
+  min-height: 260rpx;
+  padding: 16rpx 10rpx;
+  border-radius: 24rpx;
+}
+
+.cell-title {
+  max-width: 180rpx;
+  font-size: 28rpx;
+  line-height: 38rpx;
+}
+
+.cell-image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 12rpx;
+}
+
+.start-text {
+  font-size: 40rpx;
+  line-height: 52rpx;
+}
+
+.result-card {
+  margin: 40rpx 30rpx 0;
+  padding: 26rpx 22rpx;
+}
+
+.result-title {
+  font-size: 36rpx;
+  line-height: 48rpx;
+}
+
+.result-content {
+  gap: 20rpx;
+}
+
+.result-image {
+  width: 200rpx;
+  height: 150rpx;
+}
+
+.result-info {
+  margin-left: 0;
+}
+
+.dish-name {
+  font-size: 34rpx;
+  line-height: 44rpx;
+}
+
+.dish-tag {
+  font-size: 23rpx;
+  line-height: 30rpx;
+}
+
+.dish-desc {
+  font-size: 27rpx;
+  line-height: 38rpx;
+}
+
+.dish-meta {
+  font-size: 25rpx;
+  line-height: 34rpx;
+}
+
+.result-actions {
+  width: 134rpx;
+}
+
+.primary-button {
+  height: 62rpx;
+  font-size: 26rpx;
+}
+
+.secondary-button {
+  height: 52rpx;
+  font-size: 25rpx;
+}
+
+.alternative-section {
+  margin: 42rpx 30rpx 0;
+}
+
+.alternative-title {
+  font-size: 36rpx;
+}
+
+.alternative-sub,
+.change-batch {
+  font-size: 27rpx;
+}
+
+.alternative-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22rpx;
+}
+
+.alternative-card {
+  padding: 14rpx;
+  border-radius: 24rpx;
+}
+
+.alternative-image {
+  height: 210rpx;
+  border-radius: 18rpx;
+}
+
+.alternative-name {
+  margin-top: 14rpx;
+  font-size: 29rpx;
+  line-height: 38rpx;
+}
+
+.alternative-time {
+  font-size: 24rpx;
+  line-height: 32rpx;
 }
